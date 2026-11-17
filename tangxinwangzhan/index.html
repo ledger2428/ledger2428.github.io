@@ -1,0 +1,1168 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>溏心网站-溏心蛋做法与熟度对照指南</title>
+<meta name="description" content="溏心网站汇集溏心蛋做法、蛋黄液态到凝固的熟度对照、腌制与酱汁配方、煮蛋时间表与鸡蛋选购保存经验。含咖喱溏心蛋、中式卤溏心蛋、温泉蛋对比与常见失败原因排查，适合家庭厨房反复练习。">
+<meta name="keywords" content="溏心网站">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f4b63f'/%3E%3Ccircle cx='32' cy='33' r='18' fill='%23fff6e2'/%3E%3Ccircle cx='32' cy='34' r='9' fill='%23ef8a2b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --amber:#e99a2b;
+  --amber-deep:#c67a12;
+  --amber-soft:#fdf1d9;
+  --yolk:#ef8a2b;
+  --ink:#2a231c;
+  --ink-soft:#5d5346;
+  --ink-faint:#8b8073;
+  --paper:#fffaf1;
+  --paper-2:#fcf3e3;
+  --line:#e8dcc6;
+  --line-strong:#d8c8a9;
+  --white:#ffffff;
+  --ok:#4b7b52;
+  --warn:#a8541f;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-s:0 1px 3px rgba(80,60,30,.08);
+  --shadow-m:0 6px 18px rgba(80,60,30,.10);
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --font-serif:"Songti SC","Noto Serif SC",Georgia,"Times New Roman",serif;
+  --sticky-offset:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font-sans);font-size:16px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--amber-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+h2{font-size:1.5rem;letter-spacing:.01em}
+h3{font-size:1.12rem}
+p{margin:0 0 var(--space-3)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 var(--space-5)}
+.muted{color:var(--ink-soft)}
+.small{font-size:.86rem}
+.tiny{font-size:.78rem;color:var(--ink-faint)}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.sticky-top{position:sticky;top:0;z-index:60}
+.notice{
+  background:linear-gradient(90deg,#3a2f22,#4a3a26 60%,#3a2f22);
+  color:#f7e7c8;font-size:.84rem;
+  border-bottom:1px solid #2b2216;
+}
+.notice .wrap{display:flex;gap:var(--space-3);align-items:center;min-height:34px;padding-top:6px;padding-bottom:6px;flex-wrap:wrap}
+.notice strong{color:#ffcf7a;font-weight:600}
+.notice .tag{
+  background:var(--amber);color:#2a1c07;font-weight:700;
+  padding:1px 7px;border-radius:999px;font-size:.72rem;letter-spacing:.04em;
+}
+.notice a{color:#ffe6b0;text-decoration:underline}
+.site-header{
+  background:rgba(255,250,241,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow-s);
+}
+.header-inner{display:flex;align-items:center;gap:var(--space-4);min-height:68px;padding-top:8px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brand-mark{width:38px;height:38px;flex:0 0 auto}
+.brand-text{font-family:var(--font-serif);font-size:1.22rem;font-weight:700;letter-spacing:.06em}
+.brand-sub{display:block;font-family:var(--font-sans);font-size:.66rem;font-weight:400;letter-spacing:.16em;color:var(--ink-faint)}
+.main-nav{margin-left:auto;display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.main-nav a{
+  color:var(--ink-soft);font-size:.9rem;padding:8px 10px;border-radius:var(--radius-s);
+  border-bottom:2px solid transparent;
+}
+.main-nav a:hover{background:var(--amber-soft);color:var(--ink);text-decoration:none}
+.main-nav a.active{border-bottom-color:var(--amber);color:var(--ink);font-weight:600}
+.header-tools{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.search-wrap{position:relative}
+.search-box{
+  display:flex;align-items:center;border:1px solid var(--line-strong);border-radius:999px;
+  background:var(--white);padding:2px 4px 2px 12px;box-shadow:var(--shadow-s);
+}
+.search-box input{
+  border:0;outline:0;background:transparent;font:inherit;font-size:.86rem;width:132px;color:var(--ink);padding:6px 0;
+}
+.search-box button{
+  border:0;background:var(--amber);color:#2a1c07;font-weight:600;font-size:.8rem;
+  border-radius:999px;padding:6px 12px;cursor:pointer;font-family:inherit;
+}
+.search-box button:hover{background:var(--amber-deep)}
+.search-box button:focus-visible,.menu-btn:focus-visible,.back-top:focus-visible,.search-box input:focus-visible,.main-nav a:focus-visible,.btn:focus-visible{
+  outline:3px solid #7a4d0a;outline-offset:2px;
+}
+.search-feedback{
+  position:absolute;top:calc(100% + 8px);right:0;width:280px;background:var(--white);
+  border:1px solid var(--line);border-radius:var(--radius-m);box-shadow:var(--shadow-m);
+  padding:10px 12px;font-size:.84rem;display:none;z-index:70;max-height:280px;overflow:auto;
+}
+.search-feedback.on{display:block}
+.search-feedback a{display:block;padding:5px 0;border-bottom:1px dashed var(--line);color:var(--ink-soft)}
+.search-feedback a:last-child{border-bottom:0}
+.search-hit mark{background:#ffe2a8;color:inherit;padding:0 1px;border-radius:2px}
+.menu-btn{
+  display:none;border:1px solid var(--line-strong);background:var(--white);border-radius:var(--radius-s);
+  padding:8px 10px;font:inherit;font-size:.84rem;cursor:pointer;color:var(--ink);
+}
+@media(max-width:920px){
+  .main-nav{
+    position:absolute;left:0;right:0;top:100%;background:var(--white);border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;padding:8px 16px 14px;gap:0;display:none;box-shadow:var(--shadow-m);
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:11px 6px;border-bottom:1px solid var(--paper-2);border-radius:0}
+  .main-nav a.active{border-bottom:1px solid var(--amber)}
+  .header-inner{position:relative;flex-wrap:wrap}
+  .menu-btn{display:inline-block}
+  .search-box input{width:96px}
+}
+@media(max-width:520px){
+  .brand-sub{display:none}
+  .search-box input{width:80px}
+}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(120% 90% at 88% 8%,#ffeccc 0%,rgba(255,236,204,0) 58%),
+    radial-gradient(80% 70% at 6% 96%,#fbe6c0 0%,rgba(251,230,192,0) 60%),
+    linear-gradient(180deg,#fffaf1 0%,#fdf3e1 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{
+  display:grid;grid-template-columns:1.12fr .88fr;gap:var(--space-7);
+  padding-top:var(--space-7);padding-bottom:var(--space-7);align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.15em;
+  color:var(--amber-deep);text-transform:uppercase;margin-bottom:var(--space-4);
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--amber);display:block}
+.hero h1{
+  font-family:var(--font-serif);font-size:clamp(2rem,4.4vw,3.1rem);letter-spacing:.03em;
+  margin-bottom:var(--space-4);color:#241c12;
+}
+.hero h1 em{font-style:normal;color:var(--amber-deep)}
+.hero-lead{font-size:1.02rem;color:var(--ink-soft);max-width:36em;margin-bottom:var(--space-5)}
+.hero-lead b{color:var(--ink);font-weight:600}
+.hero-actions{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-5)}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:999px;font-weight:600;font-size:.94rem;
+  border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .18s ease,background .18s ease;
+}
+.btn-primary{background:var(--amber);color:#2a1c07;box-shadow:0 4px 0 #c98a20}
+.btn-primary:hover{text-decoration:none;background:#f0a83c;transform:translateY(-2px)}
+.btn-ghost{background:var(--white);border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost:hover{text-decoration:none;background:var(--amber-soft);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:var(--space-5);flex-wrap:wrap;border-top:1px dashed var(--line-strong);padding-top:var(--space-4)}
+.hero-stats div{min-width:96px}
+.hero-stats strong{display:block;font-family:var(--font-serif);font-size:1.5rem;color:var(--amber-deep);line-height:1.2}
+.hero-stats span{font-size:.78rem;color:var(--ink-faint);letter-spacing:.04em}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:400px;height:auto}
+@media(max-width:880px){
+  .hero .wrap{grid-template-columns:1fr;gap:var(--space-5);padding-top:var(--space-5);padding-bottom:var(--space-6)}
+  .hero-art{order:-1;max-width:290px;margin:0 auto}
+  .hero-stats{gap:var(--space-4)}
+}
+
+/* ---------- 通用板块 ---------- */
+section[id]{scroll-margin-top:var(--sticky-offset)}
+.section{padding:var(--space-7) 0}
+.section + .section{border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--space-4);margin-bottom:var(--space-5);flex-wrap:wrap}
+.sec-head .kicker{
+  font-size:.74rem;letter-spacing:.2em;color:var(--amber-deep);font-weight:600;display:block;margin-bottom:6px;
+}
+.sec-head p{margin:0;max-width:44em;color:var(--ink-soft);font-size:.92rem}
+.sec-link{font-size:.86rem;white-space:nowrap}
+
+/* 领域概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)}
+.ov-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-4) var(--space-5);box-shadow:var(--shadow-s);
+}
+.ov-card h3{font-size:1rem;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.ov-card h3 i{width:8px;height:8px;background:var(--amber);border-radius:50%;display:block;flex:0 0 auto}
+.ov-card p{font-size:.88rem;color:var(--ink-soft);margin:0}
+.ov-card .num{font-family:var(--font-serif);font-size:1.24rem;color:var(--amber-deep);font-weight:700}
+
+/* 精选内容 */
+.feature-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:var(--space-4)}
+.f-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:var(--shadow-s);transition:transform .18s ease,box-shadow .18s ease;
+}
+.f-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m)}
+.f-card .thumb{aspect-ratio:16/9;overflow:hidden;background:var(--paper-2)}
+.f-card .thumb img{width:100%;height:100%;object-fit:cover}
+.f-card .body{padding:var(--space-4);display:flex;flex-direction:column;gap:6px;flex:1}
+.f-card .meta{font-size:.74rem;color:var(--ink-faint);letter-spacing:.03em}
+.f-card h3{font-size:1rem;line-height:1.45}
+.f-card p{font-size:.86rem;color:var(--ink-soft);margin:0}
+.f-card .more{margin-top:auto;font-size:.8rem;font-weight:600}
+.f-card.big .body{padding:var(--space-5)}
+.f-card.big h3{font-size:1.2rem}
+.f-card.big p{font-size:.9rem}
+@media(max-width:880px){ .feature-grid{grid-template-columns:1fr 1fr} .f-card.big{grid-column:1/-1} }
+@media(max-width:560px){ .feature-grid{grid-template-columns:1fr} }
+
+/* 最新更新 时间线 */
+.timeline{position:relative;padding-left:0}
+.tl-item{
+  display:grid;grid-template-columns:104px 1fr;gap:var(--space-4);
+  padding:var(--space-4) 0;border-bottom:1px dashed var(--line-strong);
+}
+.tl-item:last-child{border-bottom:0}
+.tl-date{font-family:var(--font-serif);font-weight:700;color:var(--amber-deep);font-size:.9rem}
+.tl-date span{display:block;font-family:var(--font-sans);font-weight:400;font-size:.74rem;color:var(--ink-faint)}
+.tl-body h3{font-size:.98rem;margin-bottom:4px}
+.tl-body p{font-size:.86rem;color:var(--ink-soft);margin:0}
+.tl-body .pills{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}
+.pill{
+  font-size:.72rem;background:var(--amber-soft);color:#8a5a12;border:1px solid #f0d9a9;
+  border-radius:999px;padding:1px 9px;
+}
+.pill.dark{background:#f3ece1;color:var(--ink-soft);border-color:var(--line)}
+@media(max-width:560px){ .tl-item{grid-template-columns:1fr;gap:4px} }
+
+/* 分类入口 标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:10px}
+.cat-index a{
+  display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--line-strong);
+  border-radius:999px;padding:9px 16px;color:var(--ink);font-size:.9rem;box-shadow:var(--shadow-s);
+  transition:transform .16s ease,background .16s ease;
+}
+.cat-index a:hover{background:var(--amber-soft);text-decoration:none;transform:translateY(-2px)}
+.cat-index a b{font-weight:600}
+.cat-index a em{font-style:normal;font-size:.74rem;color:var(--ink-faint)}
+
+/* 深度解析 双栏 */
+.analysis{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--space-6);align-items:start}
+.article-body{font-size:1rem;color:#3a322a}
+.article-body h3{margin-top:var(--space-5);margin-bottom:var(--space-3);font-size:1.06rem;border-left:4px solid var(--amber);padding-left:10px}
+.article-body p{margin-bottom:var(--space-3)}
+.article-body ol{margin:var(--space-3) 0 var(--space-4)}
+.article-body ol li{
+  position:relative;padding-left:30px;margin-bottom:8px;font-size:.92rem;color:var(--ink-soft);
+}
+.article-body ol li::before{
+  counter-increment:step;content:counter(step);position:absolute;left:0;top:2px;
+  width:20px;height:20px;border-radius:50%;background:var(--amber);color:#2a1c07;
+  font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.article-body ol{counter-reset:step}
+.callout{
+  background:var(--amber-soft);border:1px solid #f0d9a9;border-radius:var(--radius-m);
+  padding:var(--space-4);font-size:.9rem;color:#6a4a12;margin:var(--space-4) 0;
+}
+.callout strong{color:#5a3c07}
+.compare-table{width:100%;border-collapse:collapse;font-size:.86rem;margin:var(--space-3) 0 var(--space-4);background:var(--white)}
+.compare-table th,.compare-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare-table th{background:var(--paper-2);font-weight:600;font-size:.8rem;color:var(--ink-soft)}
+.side-box{position:sticky;top:calc(var(--sticky-offset) + 8px);display:flex;flex-direction:column;gap:var(--space-4)}
+.side-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--space-4);box-shadow:var(--shadow-s)}
+.side-card h4{font-size:.9rem;margin-bottom:var(--space-3);padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-card ul li{font-size:.84rem;padding:6px 0;border-bottom:1px dashed var(--paper-2)}
+.side-card ul li:last-child{border-bottom:0}
+.side-nav a{display:block;font-size:.85rem;padding:7px 10px;border-left:3px solid transparent;color:var(--ink-soft);border-radius:0 var(--radius-s) var(--radius-s) 0}
+.side-nav a:hover{background:var(--amber-soft);text-decoration:none}
+.side-nav a.current{border-left-color:var(--amber);background:var(--amber-soft);color:var(--ink);font-weight:600}
+@media(max-width:920px){ .analysis{grid-template-columns:1fr} .side-box{position:static} }
+
+/* 体验指南 编号步骤 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);counter-reset:s}
+.step{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-4);position:relative;box-shadow:var(--shadow-s);
+}
+.step::before{
+  counter-increment:s;content:counter(s);
+  font-family:var(--font-serif);font-size:2rem;font-weight:700;color:#f0d9a9;line-height:1;
+  display:block;margin-bottom:6px;
+}
+.step h3{font-size:.96rem;margin-bottom:6px}
+.step p{font-size:.84rem;color:var(--ink-soft);margin:0}
+@media(max-width:880px){ .steps{grid-template-columns:1fr 1fr} }
+@media(max-width:520px){ .steps{grid-template-columns:1fr} }
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:10px}
+details{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:0 var(--space-4);box-shadow:var(--shadow-s);
+}
+details[open]{border-color:var(--line-strong);background:#fffdf8}
+summary{
+  cursor:pointer;padding:14px 30px 14px 0;font-weight:600;font-size:.94rem;position:relative;list-style:none;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+  font-size:1.2rem;color:var(--amber-deep);font-weight:400;line-height:1;
+}
+details[open] summary::after{content:"–"}
+details .ans{padding:0 0 16px;font-size:.9rem;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:12px}
+details .ans p{margin:0 0 8px}
+details .ans p:last-child{margin:0}
+
+/* 用户评论 */
+.comments{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)}
+.cm{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--space-4);
+  display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow-s);
+}
+.cm .who{display:flex;align-items:center;gap:10px}
+.cm .avatar{
+  width:34px;height:34px;border-radius:50%;background:var(--amber-soft);color:#8a5a12;
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.86rem;flex:0 0 auto;
+}
+.cm .name{font-size:.86rem;font-weight:600}
+.cm .stars{font-size:.72rem;color:var(--amber-deep);letter-spacing:.08em}
+.cm p{font-size:.86rem;color:#4a423a;margin:0}
+.cm .ref{font-size:.74rem;color:var(--ink-faint);border-top:1px dashed var(--line);padding-top:6px;margin-top:auto}
+@media(max-width:880px){ .comments{grid-template-columns:1fr 1fr} }
+@media(max-width:560px){ .comments{grid-template-columns:1fr} }
+
+/* 相关资讯 紧凑列表 */
+.news-list{display:grid;grid-template-columns:1fr 1fr;gap:0 var(--space-6)}
+.news-list li{padding:12px 0;border-bottom:1px dashed var(--line-strong);display:flex;gap:14px;align-items:baseline}
+.news-list .d{font-size:.76rem;color:var(--ink-faint);flex:0 0 58px}
+.news-list .t{font-size:.92rem;color:var(--ink);flex:1}
+.news-list .t small{display:block;font-size:.78rem;color:var(--ink-soft);margin-top:2px}
+@media(max-width:640px){ .news-list{grid-template-columns:1fr} }
+
+/* 相关推荐 标签 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:10px}
+.tag-cloud a{
+  background:var(--white);border:1px solid var(--line-strong);border-radius:var(--radius-s);
+  padding:8px 14px;font-size:.86rem;color:var(--ink);box-shadow:var(--shadow-s);
+}
+.tag-cloud a:hover{background:var(--amber-soft);text-decoration:none}
+.tag-cloud a span{color:var(--ink-faint);font-size:.74rem;margin-left:6px}
+
+/* 榜单 */
+.rank{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;box-shadow:var(--shadow-s)}
+.rank li{display:grid;grid-template-columns:52px 1fr auto;gap:var(--space-3);align-items:center;padding:14px var(--space-4);border-bottom:1px solid var(--paper-2)}
+.rank li:last-child{border-bottom:0}
+.rank li:hover{background:#fffdf7}
+.rank .no{font-family:var(--font-serif);font-weight:700;font-size:1.1rem;color:var(--line-strong)}
+.rank li:nth-child(1) .no{color:#c89a2a}
+.rank li:nth-child(2) .no{color:#a09a90}
+.rank li:nth-child(3) .no{color:#b57b48}
+.rank .rk-t{font-size:.92rem;font-weight:600}
+.rank .rk-d{font-size:.78rem;color:var(--ink-soft);font-weight:400;display:block;margin-top:2px}
+.rank .score{font-size:.78rem;color:var(--ink-faint);white-space:nowrap}
+@media(max-width:520px){ .rank li{grid-template-columns:40px 1fr; } .rank .score{display:none} }
+
+/* 页尾 */
+.site-footer{background:#2f271d;color:#d8cdbc;margin-top:var(--space-6);font-size:.88rem}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--space-5);padding:var(--space-7) 0 var(--space-5)}
+.footer-brand .brand{color:#fff}
+.footer-brand .brand-text{color:#fff}
+.footer-brand .brand-sub{color:#a99c88}
+.footer-tag{font-size:.86rem;color:#b7aa96;margin-top:var(--space-3);max-width:24em}
+.footer-col h4{font-size:.84rem;letter-spacing:.1em;color:#f0d9a9;margin-bottom:var(--space-3);font-weight:600}
+.footer-col li{margin-bottom:7px}
+.footer-col a{color:#c9bdab;font-size:.84rem}
+.footer-col a:hover{color:#fff;text-decoration:none}
+.footer-bottom{border-top:1px solid #453a2c;padding:var(--space-4) 0 var(--space-6);display:flex;justify-content:space-between;gap:var(--space-4);flex-wrap:wrap;color:#9c9080;font-size:.78rem}
+.footer-bottom p{margin:0}
+@media(max-width:880px){ .footer-top{grid-template-columns:1fr 1fr} }
+@media(max-width:520px){ .footer-top{grid-template-columns:1fr} }
+
+/* 回到顶部 */
+.back-top{
+  position:fixed;right:18px;bottom:22px;z-index:80;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);
+  background:var(--white);color:var(--amber-deep);font-size:1.1rem;cursor:pointer;
+  box-shadow:var(--shadow-m);display:none;align-items:center;justify-content:center;
+}
+.back-top.show{display:flex}
+.back-top:hover{background:var(--amber-soft);transform:translateY(-2px)}
+@media(max-width:520px){ .back-top{width:40px;height:40px;right:12px;bottom:14px} }
+
+/* 动效偏好 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .f-card:hover,.btn:hover,.cat-index a:hover,.back-top:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="notice" role="region" aria-label="站点更新公告">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span><strong>11月7日</strong> 上线「蛋黄流心分级表 v3」，新增 6分30秒、7分30秒两档水温实测</span>
+      <a href="/#update">看更新记录</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/#" aria-label="溏心网站首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+          <circle cx="32" cy="32" r="30" fill="#f4b63f"/>
+          <ellipse cx="32" cy="33" rx="19" ry="21" fill="#fff6e2"/>
+          <circle cx="32" cy="34" r="9.5" fill="#ef8a2b"/>
+          <circle cx="28.5" cy="30.5" r="3" fill="#ffd79b" opacity=".9"/>
+        </svg>
+        <span>
+          <span class="brand-text">溏心网站</span>
+          <span class="brand-sub">EGG YOLK LAB</span>
+        </span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">熟度基础</a>
+        <a href="/#featured">精选配方</a>
+        <a href="/#update">更新时间线</a>
+        <a href="/#cats">分类索引</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#reviews">评价</a>
+        <a href="/#rank">榜单</a>
+      </nav>
+      <div class="header-tools">
+        <div class="search-wrap">
+          <div class="search-box">
+            <label for="siteSearch" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内搜索</label>
+            <input id="siteSearch" type="search" placeholder="搜配方、时间、酱汁" autocomplete="off">
+            <button type="button" id="searchBtn">查找</button>
+          </div>
+          <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">蛋黄熟度实验室</span>
+        <h1>溏心网站</h1>
+        <p class="hero-lead">
+          记录从 <b>5分30秒</b> 到 <b>8分30秒</b> 的蛋黄状态变化，配温度、蛋重与冷却方式。中式卤汁、日式酱油味醂、咖喱溏心蛋各自对应的浸泡时长，都按可复现的克数与分钟写清楚。厨房里能核对的东西，比形容词有用。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#analysis">读熟度解析</a>
+          <a class="btn btn-ghost" href="/#guide">照步骤做一次</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>312</strong><span>条实测记录</span></div>
+          <div><strong>46</strong><span>组腌制配比</span></div>
+          <div><strong>11月7日</strong><span>最近一次更新</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 420" role="presentation">
+          <defs>
+            <radialGradient id="pg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#fffaf1"/>
+              <stop offset="100%" stop-color="#f6e7cb"/>
+            </radialGradient>
+            <radialGradient id="yg" cx="42%" cy="38%" r="60%">
+              <stop offset="0%" stop-color="#ffd08a"/>
+              <stop offset="100%" stop-color="#e88b22"/>
+            </radialGradient>
+          </defs>
+          <circle cx="210" cy="210" r="176" fill="url(#pg)" stroke="#e8dcc6"/>
+          <circle cx="210" cy="210" r="132" fill="#fffdf8" stroke="#efe3cd" stroke-width="2"/>
+          <circle cx="210" cy="212" r="64" fill="url(#yg)"/>
+          <ellipse cx="188" cy="188" rx="20" ry="14" fill="#fff3d6" opacity=".55" transform="rotate(-24 188 188)"/>
+          <g stroke="#c9b48c" stroke-width="3" stroke-linecap="round">
+            <line x1="210" y1="18" x2="210" y2="48"/>
+            <line x1="210" y1="372" x2="210" y2="402"/>
+            <line x1="18" y1="210" x2="48" y2="210"/>
+            <line x1="372" y1="210" x2="402" y2="210"/>
+          </g>
+          <g fill="#8b6c3a" font-family="Georgia,serif" font-size="15" text-anchor="middle">
+            <text x="210" y="14">0</text>
+            <text x="210" y="416">10min</text>
+            <text x="12" y="215">冷水</text>
+            <text x="410" y="215">沸水</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 领域概览 -->
+  <section class="section" id="overview">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">01 · 熟度基础</span>
+          <h2>先弄清三种熟度：液态、膏状、凝固</h2>
+        </div>
+        <p>同样写“溏心”，厨房间的理解差很多。以下按切面状态、可剥壳程度和温度区间拆开，便于选配方前先对齐说法。</p>
+      </div>
+      <div class="overview-grid">
+        <div class="ov-card">
+          <h3><i></i>蛋黄液态 · 5分30秒</h3>
+          <p>蛋白刚凝固，切面蛋黄能自由流出。适合盖在热米饭上或做拌面，剥壳时蛋白薄、容易破，通常用勺子挖出。中心温度约 <span class="num">68℃</span>。</p>
+        </div>
+        <div class="ov-card">
+          <h3><i></i>蛋黄膏状 · 6分30秒</h3>
+          <p>蛋黄外圈成型、中心仍是黏稠膏体，切面能立住。剥壳难度中等，浸卤后不易散。多数日式味付玉子停在这一档。</p>
+        </div>
+        <div class="ov-card">
+          <h3><i></i>蛋黄凝固 · 8分钟以上</h3>
+          <p>切开后蛋黄整体发亮但不再流动，适合切片摆盘与便当。全熟要到 10分30秒。此档已不属于流心，但与“溏心”常被混用，点单时最好问清。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精选内容推荐 -->
+  <section class="section" id="featured">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">02 · 精选内容</span>
+          <h2>本周被翻得最多的五篇配方与实测</h2>
+        </div>
+        <a class="sec-link" href="/#update">全部更新 →</a>
+      </div>
+      <div class="feature-grid">
+        <article class="f-card big">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/tangxin-ramen-egg/720/405" width="720" height="405" loading="lazy" alt="瓷碗中切开的酱油味付玉子，蛋黄呈膏状，旁放拉面">
+          </div>
+          <div class="body">
+            <span class="meta">腌制配方 · 11月5日 · 阅读 1.8 万</span>
+            <h3>酱油味醂溏心蛋：6分30秒 + 冷藏 14 小时</h3>
+            <p>味醂 60ml、浓口酱油 60ml、水 120ml，蛋白表面在 14 小时后呈浅琥珀色。若冷藏超过 30 小时，咸度会盖过蛋香。附可打印的浸泡时间表。</p>
+            <a class="more" href="/#guide">看浸泡步骤 →</a>
+          </div>
+        </article>
+        <article class="f-card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/tangxin-curry-egg/480/270" width="480" height="270" loading="lazy" alt="咖喱酱中的溏心蛋切开，蛋黄半流动">
+          </div>
+          <div class="body">
+            <span class="meta">咖喱溏心蛋 · 11月4日</span>
+            <h3>咖喱溏心蛋：酱汁收浓再泡，避免蛋体发硬</h3>
+            <p>咖喱块 40g 配椰浆 80ml，收至挂勺再离火放凉。蛋从冷藏回温 5 分钟再下锅，蛋白不易裂。</p>
+            <a class="more" href="/#cats">分类入口 →</a>
+          </div>
+        </article>
+        <article class="f-card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/tangxin-onsen-egg/480/270" width="480" height="270" loading="lazy" alt="温泉蛋放在小碗中，蛋黄呈半凝固状态，撒少量盐">
+          </div>
+          <div class="body">
+            <span class="meta">温泉蛋对比 · 11月3日</span>
+            <h3>温泉蛋和溏心蛋差别在哪：65℃ 与 100℃ 两条路</h3>
+            <p>温泉蛋在 65℃ 水中 45 分钟，蛋白接近液态；沸水组靠秒数控制。两条路线在剥壳、保存和配餐上完全不同。</p>
+            <a class="more" href="/#analysis">读解析 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新更新 时间线 -->
+  <section class="section" id="update">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">03 · 最新更新</span>
+          <h2>10月28日至11月7日发布的条目</h2>
+        </div>
+        <p>按发布日期排列，每条单独核对了蛋重与锅具口径。</p>
+      </div>
+      <ul class="timeline">
+        <li class="tl-item">
+          <div class="tl-date">11月7日<span>今天</span></div>
+          <div class="tl-body">
+            <h3>蛋黄流心分级表 v3 上线</h3>
+            <p>补测 6分30秒与7分30秒两档，使用 55g 冷藏蛋、18cm 奶锅、水沸后下蛋。两档的蛋黄中心温度差约 3.4℃。</p>
+            <div class="pills"><span class="pill">分级表</span><span class="pill dark">实测数据</span></div>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-date">11月6日<span>昨天</span></div>
+          <div class="tl-body">
+            <h3>中式卤溏心蛋：八角、桂皮、生抽 1:3 配比</h3>
+            <p>卤汁煮沸后彻底放凉再放蛋，热汁会把蛋白外层烫老。冷藏浸泡 8 小时风味最稳，超过 20 小时偏咸。</p>
+            <div class="pills"><span class="pill">中式卤汁</span></div>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-date">11月3日<span>本周</span></div>
+          <div class="tl-body">
+            <h3>剥壳失败原因排查：气室、冷却、蛋龄三条线</h3>
+            <p>气室朝下入锅、冰水冷却 3 分钟、放置 5 至 7 天的蛋更好剥。刚产下的新蛋蛋白 pH 偏低，膜与壳粘得紧。</p>
+            <div class="pills"><span class="pill dark">失败排查</span></div>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-date">10月30日<span>本周</span></div>
+          <div class="tl-body">
+            <h3>咖喱溏心蛋的第二次浸泡实验</h3>
+            <p>椰浆比例从 1:1 降到 1:2 后，蛋黄流心在 12 小时内保持稳定；咖喱块全部溶解前不要放蛋，否则酱汁结块粘壳。</p>
+            <div class="pills"><span class="pill">咖喱</span><span class="pill">浸泡时长</span></div>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-date">10月28日<span>本周</span></div>
+          <div class="tl-body">
+            <h3>鸡蛋选购与保存：日期码、冷藏层位、可用天数</h3>
+            <p>盒装蛋的日期码通常标注产蛋日，冷藏 4℃ 下 21 天内使用。尖头朝下放置能减少气室晃动。</p>
+            <div class="pills"><span class="pill dark">鸡蛋选购</span></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="section" id="cats">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">04 · 分类入口</span>
+          <h2>按做法、酱汁与用途找配方</h2>
+        </div>
+      </div>
+      <div class="cat-index">
+        <a href="/#overview"><b>溏心蛋煮几分钟</b><em>时间表</em></a>
+        <a href="/#featured"><b>酱油味付玉子</b><em>腌制</em></a>
+        <a href="/#guide"><b>溏心蛋怎么剥壳不破</b><em>手法</em></a>
+        <a href="/#analysis"><b>温泉蛋与溏心蛋区别</b><em>对比</em></a>
+        <a href="/#featured"><b>咖喱溏心蛋</b><em>咖喱</em></a>
+        <a href="/#update"><b>中式卤溏心蛋</b><em>卤汁</em></a>
+        <a href="/#faq"><b>溏心蛋冷藏能放几天</b><em>保存</em></a>
+        <a href="/#guide"><b>鸡蛋选购与保存</b><em>选购</em></a>
+        <a href="/#faq"><b>溏心蛋给孩子吃安全吗</b><em>食用</em></a>
+        <a href="/#rank"><b>流心蛋黄分级表</b><em>工具</em></a>
+        <a href="/#reviews"><b>便当里的溏心蛋做法</b><em>便当</em></a>
+        <a href="/#faq"><b>溏心蛋用什么锅煮</b><em>器具</em></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="section" id="analysis">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">05 · 深度解析</span>
+          <h2>秒数不是关键，热量进入蛋黄的速度才是</h2>
+        </div>
+        <p>用 312 条记录里干扰最少的一组，讨论“同样 6分30秒，为什么结果不同”。</p>
+      </div>
+      <div class="analysis">
+        <article class="article-body">
+          <p>先说判断：<strong>决定流心程度的不是计时器上的秒数，而是蛋黄中心在最后 90 秒里达到的温度。</strong>同样 6分30秒，55g 冷藏蛋在 18cm 奶锅、1.2L 沸水中，蛋黄中心约 73℃；换成 65g 室温蛋与 2L 水，中心可到 78℃，切面已经接近凝固。这个差异足以让同一条配方在两个厨房里得到不同结果。</p>
+
+          <h3>一、三次同配方复测的数据差异</h3>
+          <p>10月28日至11月6日做了三次对照，统一用 18cm 奶锅、水沸后下蛋、冰水冷却 3 分钟。三次之间唯一改动的是水量和蛋的初始温度。</p>
+          <table class="compare-table">
+            <thead>
+              <tr><th>条件</th><th>水量</th><th>蛋初始温度</th><th>6分30秒后蛋黄状态</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>A 组</td><td>1.2L</td><td>冷藏 4℃</td><td>膏状，中心可流</td></tr>
+              <tr><td>B 组</td><td>2.0L</td><td>冷藏 4℃</td><td>膏状偏稠，几乎不流</td></tr>
+              <tr><td>C 组</td><td>2.0L</td><td>回温 18℃</td><td>外圈凝固，中心仍略流</td></tr>
+            </tbody>
+          </table>
+          <p>B 组与 A 组只差 0.8L 水，结果却不一致。水量大、沸水回落小，热量供应更持续，蛋白与蛋黄同时升温更快。这条现象在 10月31日的记录里也出现过一次，当时被误记成“蛋太大了”。</p>
+
+          <div class="callout">
+            <strong>可核对的判断结构：</strong>变量是水量与蛋初始温度；观测点是切开后的蛋黄流动距离；结论是“水量每增加 0.8L，蛋黄中心升到同一状态约快 25 至 35 秒”。这个结论可以被更精确的探针复测推翻。
+          </div>
+
+          <h3>二、冷却方式被低估的原因</h3>
+          <p>11月2日的 6分30秒实验里，两组差异只出现在冷却环节：一组直接捞入 0℃ 冰水，另一组在室温静置 2 分钟再冰镇。冰水组蛋黄边缘更整齐，室温组切开时蛋黄向蛋白一侧塌陷。原因不复杂，余热在静置期间继续把蛋黄推向凝固。厨房里可执行的动作是：出水后 10 秒内进冰水，水里加两三块冰，冷却满 3 分钟再剥。</p>
+
+          <h3>三、关于“加盐或加醋”的两种说法</h3>
+          <p>一种说法认为水里加盐能让蛋白更快凝固、减少破壳溢出；另一种说法认为盐对凝固点影响有限，真正有用的是加醋让蛋白外层迅速变性。11月4日的对照只做了盐组与白水组：500ml 水加 5g 盐，破壳率没有明显差别，但破口后蛋白溢出量略少。醋组尚未完成足量复测，目前的记录只能算转述，不当作结论。这里明确区分：破壳是事实层面的观察，加醋的效果属于推测。</p>
+
+          <h3>四、被引用时最容易出错的一句话</h3>
+          <p>“水沸后下蛋 6 分钟一定流心”这句话被转述得最多，也最容易被反驳。它缺了三个前提：蛋重 50 至 55g、冷藏取出未回温、锅具口径 18cm。把前提写全，这句话才成立；否则它只是一个平均值。</p>
+        </article>
+        <aside class="side-box" aria-label="解析侧栏">
+          <div class="side-card side-nav">
+            <h4>本页导航</h4>
+            <a href="/#overview">熟度基础</a>
+            <a href="/#featured">精选内容</a>
+            <a href="/#update">最新更新</a>
+            <a href="/#cats">分类入口</a>
+            <a href="/#analysis" class="current">深度解析</a>
+            <a href="/#guide">体验指南</a>
+            <a href="/#faq">常见问题</a>
+            <a href="/#reviews">用户评价</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#rank">榜单</a>
+          </div>
+          <div class="side-card">
+            <h4>本页涉及的专属词</h4>
+            <ul class="small">
+              <li>味付玉子 · 温泉蛋 · 卤溏心蛋</li>
+              <li>蛋黄流心分级表 v3</li>
+              <li>气室 · 蛋龄 · pH 值</li>
+              <li>冰水冷却 · 回温 · 中心温度</li>
+              <li>18cm 奶锅 · 1.2L 沸水</li>
+            </ul>
+          </div>
+          <div class="side-card">
+            <h4>可核对的三次记录</h4>
+            <ul class="small">
+              <li>10月28日 · A 组 1.2L</li>
+              <li>11月2日 · 冰水与静置对照</li>
+              <li>11月4日 · 盐组与白水组</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 体验指南 编号步骤 -->
+  <section class="section" id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">06 · 体验指南</span>
+          <h2>第一次做：从冰箱到切开共 22 分钟</h2>
+        </div>
+        <p>以 55g 冷藏蛋、18cm 奶锅、1.2L 水为准。全程需要一个计时器。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>备水与蛋</h3>
+          <p>锅中放 1.2L 水，大火烧到连续大泡翻滚。冷藏蛋从冰箱取出后不冲热水，用勺背轻放入锅，气室朝下。</p>
+        </div>
+        <div class="step">
+          <h3>计时 6 分 30 秒</h3>
+          <p>下蛋即开始计时，保持中火让水面持续翻动。前 30 秒轻轻拨动蛋，让蛋黄居中，之后不要频繁搅动。</p>
+        </div>
+        <div class="step">
+          <h3>冰水冷却 3 分钟</h3>
+          <p>捞出后 10 秒内进冰水，水面没过蛋。冷却不足会让余热继续加热蛋黄，切面塌陷。</p>
+        </div>
+        <div class="step">
+          <h3>敲壳与剥膜</h3>
+          <p>在台面上轻敲一圈，从钝端气室处起剥，边剥边用细水流冲。剥完擦干再入腌汁，避免水分稀释酱汁。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">07 · 常见问题</span>
+          <h2>厨房里最常被追问的八个问题</h2>
+        </div>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>溏心蛋煮几分钟才能流心？</summary>
+          <div class="ans"><p>55g 冷藏蛋在沸水 1.2L、18cm 奶锅条件下，5分30秒到 6分30秒之间通常能保持流心或膏状。蛋重增加到 65g 或水温回落明显时，需要往后加 20 至 40 秒。建议第一次用 6 分钟做基准，再按切开结果微调。</p></div>
+        </details>
+        <details>
+          <summary>溏心蛋怎么剥壳不破？</summary>
+          <div class="ans"><p>三个动作最关键：下蛋前用勺背让蛋平稳入水；捞出后 10 秒内进冰水；从钝端气室开始剥，边剥边冲细水流。另外，放置 5 至 7 天的蛋蛋白 pH 偏高，膜与壳分离更顺，比刚产的新蛋好剥。</p></div>
+        </details>
+        <details>
+          <summary>溏心蛋冷藏能放几天？</summary>
+          <div class="ans"><p>不带腌汁的剥壳蛋在 4℃ 冷藏建议 24 小时内吃完；带壳冷藏可放到 48 小时。泡在酱油味醂汁里的味付玉子通常 2 至 3 天，超过 30 小时咸度会明显上升。咖喱溏心蛋因酱汁含油脂，建议 2 天内食用。</p></div>
+        </details>
+        <details>
+          <summary>温泉蛋与溏心蛋区别是什么？</summary>
+          <div class="ans"><p>温泉蛋在 65℃ 左右水中长时间浸泡，蛋白接近液态、蛋黄半凝固，剥壳后需要碗盛；溏心蛋用沸水短时间煮，蛋白已经凝固成型，可以拿在手上。两者在配餐上也不同：温泉蛋多浇在米饭上，味付玉子则常配拉面。</p></div>
+        </details>
+        <details>
+          <summary>咖喱溏心蛋的酱汁怎么配？</summary>
+          <div class="ans"><p>40g 咖喱块配 80ml 椰浆、150ml 水，中小火煮到挂勺再离火彻底放凉。咖喱块完全溶解前不要放蛋，否则小块粘在蛋白上影响外观。冷藏浸泡 8 至 12 小时风味稳定。</p></div>
+        </details>
+        <details>
+          <summary>中式卤溏心蛋用什么酱油和香料？</summary>
+          <div class="ans"><p>生抽 3 份、水 1 份、冰糖少量，加八角一颗、桂皮一小段、香叶两片。卤汁煮沸后必须放凉再放蛋，热汁会把蛋白外层烫老。冷藏 8 小时风味最平衡。</p></div>
+        </details>
+        <details>
+          <summary>溏心蛋给孩子吃安全吗？</summary>
+          <div class="ans"><p>流心部分的蛋黄温度若低于 71℃，沙门氏菌风险不能完全排除。给幼儿、孕妇或免疫力较弱者食用时，建议改用 8分钟以上、蛋黄基本凝固的做法，并选用带日期码的盒装冷藏蛋。</p></div>
+        </details>
+        <details>
+          <summary>溏心蛋用什么锅煮比较好？</summary>
+          <div class="ans"><p>18cm 奶锅配 1.2L 水是记录中最稳定的组合，水面能没过蛋且回落小。锅太宽、水太浅时，下蛋后水温掉得多，实际加热时间会拉长。厚底锅比薄底锅温度更均匀。</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">08 · 用户评价</span>
+          <h2>按配方做过的人怎么说</h2>
+        </div>
+        <p>评论来自站内投稿，保留原话措辞，包含不同的语气。</p>
+      </div>
+      <div class="comments">
+        <div class="cm">
+          <div class="who">
+            <span class="avatar" aria-hidden="true">林</span>
+            <div>
+              <div class="name">林小满 · 杭州</div>
+              <div class="stars" aria-label="评分 5 星">★★★★★</div>
+            </div>
+          </div>
+          <p>按 6分30秒做味付玉子，14 小时冷藏后颜色刚好，蛋白外层不韧。之前用 30 小时泡法咸到发苦，这条配方把时间写死了确实省事。</p>
+          <div class="ref">指向：酱油味醂溏心蛋配方</div>
+        </div>
+        <div class="cm">
+          <div class="who">
+            <span class="avatar" aria-hidden="true">周</span>
+            <div>
+              <div class="name">周叙 · 成都</div>
+              <div class="stars" aria-label="评分 4 星">★★★★☆</div>
+            </div>
+          </div>
+          <p>咖喱溏心蛋的椰浆 1:2 我做出来偏稀，挂不住蛋。后来自己把咖喱块加到 50g 才好一点。水量那段写得清楚，但酱汁浓稠度还可以再给个参照。</p>
+          <div class="ref">指向：咖喱溏心蛋浸泡实验</div>
+        </div>
+        <div class="cm">
+          <div class="who">
+            <span class="avatar" aria-hidden="true">陈</span>
+            <div>
+              <div class="name">陈见山 · 沈阳</div>
+              <div class="stars" aria-label="评分 3 星">★★★☆☆</div>
+            </div>
+          </div>
+          <p>我家的灶火力偏小，同样 6分30秒蛋黄还是液态，切面流了一盘子。分级表里提到的“水面持续翻动”，小灶很难做到，希望补一条小火灶的补偿时间。</p>
+          <div class="ref">指向：蛋黄流心分级表 v3</div>
+        </div>
+        <div class="cm">
+          <div class="who">
+            <span class="avatar" aria-hidden="true">许</span>
+            <div>
+              <div class="name">许一苇 · 广州</div>
+              <div class="stars" aria-label="评分 5 星">★★★★★</div>
+            </div>
+          </div>
+          <p>剥壳那篇里“钝端气室起剥”是我以前没在意的细节，试了三次都没破。冰水冷却 3 分钟也照做了，切开蛋黄边缘整齐很多。</p>
+          <div class="ref">指向：剥壳失败原因排查</div>
+        </div>
+        <div class="cm">
+          <div class="who">
+            <span class="avatar" aria-hidden="true">郝</span>
+            <div>
+              <div class="name">郝栗 · 北京</div>
+              <div class="stars" aria-label="评分 3 星">★★★☆☆</div>
+            </div>
+          </div>
+          <p>对加盐那段的结论不太同意。我做了五次，加盐组的破壳后溢白确实少一点，但说“没有明显差别”感觉把观察压得太轻了。</p>
+          <div class="ref">指向：深度解析第三节加盐对照</div>
+        </div>
+        <div class="cm">
+          <div class="who">
+            <span class="avatar" aria-hidden="true">木</span>
+            <div>
+              <div class="name">木藤纱季 · 名古屋</div>
+              <div class="stars" aria-label="评分 5 星">★★★★★</div>
+            </div>
+          </div>
+          <p>温泉蛋 65℃ 45 分钟这条在家里用保温杯试成功了，蛋白呈半液态，浇在米饭上正好。之前一直分不清温泉蛋和味付玉子的区别。</p>
+          <div class="ref">指向：温泉蛋与溏心蛋对比</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="section" id="news">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">09 · 相关资讯</span>
+          <h2>厨房之外的鸡蛋与保存信息</h2>
+        </div>
+      </div>
+      <ul class="news-list">
+        <li><span class="d">11月6日</span><span class="t">盒装蛋日期码标注方式调整，产蛋日与包装日分开印<small>部分品牌在盖内侧加印产蛋批次，选购时先看钝端。</small></span></li>
+        <li><span class="d">11月5日</span><span class="t">冷藏柜温度实测：门口层比内层高 2.1℃<small>鸡蛋放门口层易受开关门影响，建议放内层靠后。</small></span></li>
+        <li><span class="d">11月2日</span><span class="t">18cm 奶锅与 20cm 汤锅沸水回落对比<small>下入 55g 蛋后，前者温度回落约 3℃，后者约 5℃。</small></span></li>
+        <li><span class="d">10月31日</span><span class="t">味醂与料理清酒在腌制中的可替换性讨论<small>甜度接近但酒精残留不同，冷藏 14 小时后风味差异明显。</small></span></li>
+        <li><span class="d">10月29日</span><span class="t">家庭冰箱 4℃ 档位实测，不同层位差 1.8℃<small>靠内壁一侧更低，腌蛋容器建议放中层。</small></span></li>
+        <li><span class="d">10月28日</span><span class="t">咖喱块油脂含量与酱汁挂勺关系的小样本试做<small>同品牌不同辣度版本，收浓时间相差约 2 分钟。</small></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 榜单 -->
+  <section class="section" id="rank">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">10 · 榜单</span>
+          <h2>按可复现程度排的五个配方</h2>
+        </div>
+        <p>评分依据三次以上复测的一致率、步骤数量与失败后的可修正性。</p>
+      </div>
+      <ol class="rank">
+        <li><span class="no">1</span><span class="rk-t">酱油味醂溏心蛋（6分30秒）<span class="rk-d">复测 5 次，颜色与咸度一致率最高</span></span><span class="score">一致率 92%</span></li>
+        <li><span class="no">2</span><span class="rk-t">中式卤溏心蛋（八角桂皮）<span class="rk-d">常温放凉卤汁是关键，热汁口感偏硬</span></span><span class="score">一致率 86%</span></li>
+        <li><span class="no">3</span><span class="rk-t">温泉蛋（65℃ 45 分钟）<span class="rk-d">保温设备差异大，需先测水温</span></span><span class="score">一致率 74%</span></li>
+        <li><span class="no">4</span><span class="rk-t">咖喱溏心蛋（椰浆 1:2）<span class="rk-d">酱汁浓稠度受咖喱块品牌影响</span></span><span class="score">一致率 68%</span></li>
+        <li><span class="no">5</span><span class="rk-t">便当用凝固蛋黄（8 分钟）<span class="rk-d">切面稳定，但已不属于流心</span></span><span class="score">一致率 95%</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 相关推荐 -->
+  <section class="section" id="tags">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">11 · 相关推荐</span>
+          <h2>继续翻的具体词条</h2>
+        </div>
+      </div>
+      <div class="tag-cloud">
+        <a href="/#analysis">溏心蛋煮几分钟<span>时间</span></a>
+        <a href="/#guide">溏心蛋怎么剥壳不破<span>手法</span></a>
+        <a href="/#featured">酱油味付玉子做法<span>配方</span></a>
+        <a href="/#analysis">温泉蛋和溏心蛋区别<span>对比</span></a>
+        <a href="/#featured">咖喱溏心蛋酱汁配比<span>咖喱</span></a>
+        <a href="/#update">中式卤溏心蛋香料<span>卤汁</span></a>
+        <a href="/#faq">溏心蛋冷藏保存天数<span>保存</span></a>
+        <a href="/#faq">鸡蛋选购与保存<span>选购</span></a>
+        <a href="/#faq">溏心蛋给孩子吃安全吗<span>食用</span></a>
+        <a href="/#rank">流心蛋黄分级表<span>工具</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="/#top">
+          <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="#f4b63f"/>
+            <ellipse cx="32" cy="33" rx="19" ry="21" fill="#fff6e2"/>
+            <circle cx="32" cy="34" r="9.5" fill="#ef8a2b"/>
+          </svg>
+          <span>
+            <span class="brand-text">溏心网站</span>
+            <span class="brand-sub">EGG YOLK LAB</span>
+          </span>
+        </a>
+        <p class="footer-tag">把蛋黄状态写成分级、秒数和克数，让同一个配方在第二个厨房里也能复现。</p>
+      </div>
+      <div class="footer-col">
+        <h4>熟度与配方</h4>
+        <ul>
+          <li><a href="/#overview">三种熟度对照</a></li>
+          <li><a href="/#featured">酱油味付玉子</a></li>
+          <li><a href="/#featured">咖喱溏心蛋</a></li>
+          <li><a href="/#update">中式卤溏心蛋</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>方法与工具</h4>
+        <ul>
+          <li><a href="/#analysis">水量与秒数解析</a></li>
+          <li><a href="/#guide">四步体验指南</a></li>
+          <li><a href="/#rank">流心分级表 v3</a></li>
+          <li><a href="/#faq">常见问题汇总</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>参与与反馈</h4>
+        <ul>
+          <li><a href="/#reviews">用户评价</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#tags">词条推荐</a></li>
+          <li><a href="/#update">更新记录</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>数据说明：页面内蛋重、水量、秒数均为站内示例记录，供家庭厨房参考，不作为食品安全或营养建议。</p>
+      <p>更新时间：2026年11月7日 · 对应「蛋黄流心分级表 v3」与「6分30秒、7分30秒两档实测」 · © 2026 溏心网站</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "溏心网站",
+  "description": "溏心蛋熟度对照、腌制配方与煮蛋时间表，含咖喱溏心蛋、中式卤溏心蛋与温泉蛋对比。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "溏心蛋煮几分钟才能流心？",
+      "acceptedAnswer": {"@type": "Answer", "text": "55g 冷藏蛋在沸水 1.2L、18cm 奶锅条件下，5分30秒到 6分30秒之间通常能保持流心或膏状。蛋重增加到 65g 或水温回落明显时，需要往后加 20 至 40 秒。"}
+    },
+    {
+      "@type": "Question",
+      "name": "溏心蛋怎么剥壳不破？",
+      "acceptedAnswer": {"@type": "Answer", "text": "下蛋前用勺背让蛋平稳入水，捞出后 10 秒内进冰水，从钝端气室开始剥，边剥边冲细水流。放置 5 至 7 天的蛋更好剥。"}
+    },
+    {
+      "@type": "Question",
+      "name": "溏心蛋冷藏能放几天？",
+      "acceptedAnswer": {"@type": "Answer", "text": "剥壳蛋在 4℃ 冷藏建议 24 小时内吃完，带壳可放到 48 小时。泡在酱油味醂汁里的味付玉子通常 2 至 3 天。"}
+    },
+    {
+      "@type": "Question",
+      "name": "温泉蛋与溏心蛋区别是什么？",
+      "acceptedAnswer": {"@type": "Answer", "text": "温泉蛋在 65℃ 左右水中长时间浸泡，蛋白接近液态、蛋黄半凝固；溏心蛋用沸水短时间煮，蛋白已经凝固成型，可以拿在手上。"}
+    },
+    {
+      "@type": "Question",
+      "name": "咖喱溏心蛋的酱汁怎么配？",
+      "acceptedAnswer": {"@type": "Answer", "text": "40g 咖喱块配 80ml 椰浆、150ml 水，煮到挂勺再离火放凉，冷藏浸泡 8 至 12 小时。"}
+    },
+    {
+      "@type": "Question",
+      "name": "中式卤溏心蛋用什么酱油和香料？",
+      "acceptedAnswer": {"@type": "Answer", "text": "生抽 3 份、水 1 份、冰糖少量，加八角、桂皮、香叶。卤汁煮沸后放凉再放蛋，冷藏 8 小时风味最平衡。"}
+    },
+    {
+      "@type": "Question",
+      "name": "溏心蛋给孩子吃安全吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "流心蛋黄温度低于 71℃ 时风险不能完全排除，幼儿、孕妇建议改用 8 分钟以上、蛋黄基本凝固的做法。"}
+    },
+    {
+      "@type": "Question",
+      "name": "溏心蛋用什么锅煮比较好？",
+      "acceptedAnswer": {"@type": "Answer", "text": "18cm 奶锅配 1.2L 水最稳定，水面能没过蛋且回落小。厚底锅比薄底锅温度更均匀。"}
+    }
+  ]
+}
+</script>
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.matchMedia('(max-width:920px)').matches){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&nav.classList.contains('open')){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  var backTop=document.getElementById('backTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>480){backTop.classList.add('show');}else{backTop.classList.remove('show');}
+  },{passive:true});
+  backTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('.side-nav a'));
+  var targets=sideLinks.map(function(a){
+    var id=(a.getAttribute('href')||'').split('#')[1];
+    return id?document.getElementById(id):null;
+  });
+  function markCurrent(){
+    var pos=window.scrollY+130;
+    var idx=-1;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i]&&targets[i].offsetTop<=pos){idx=i;}
+    }
+    sideLinks.forEach(function(a,i){a.classList.toggle('current',i===idx);});
+  }
+  window.addEventListener('scroll',markCurrent,{passive:true});
+  window.addEventListener('load',markCurrent);
+
+  var input=document.getElementById('siteSearch');
+  var btn=document.getElementById('searchBtn');
+  var box=document.getElementById('searchFeedback');
+  var index=[
+    {t:'蛋黄流心分级表 v3：5分30秒到8分30秒熟度对照',h:'/#overview'},
+    {t:'酱油味醂溏心蛋：6分30秒 + 冷藏14小时',h:'/#featured'},
+    {t:'咖喱溏心蛋：椰浆1:2与收浓步骤',h:'/#featured'},
+    {t:'温泉蛋与溏心蛋区别：65℃与100℃两条路',h:'/#analysis'},
+    {t:'中式卤溏心蛋：八角、桂皮、生抽1:3配比',h:'/#update'},
+    {t:'剥壳失败排查：气室、冷却、蛋龄',h:'/#update'},
+    {t:'鸡蛋选购与保存：日期码与冷藏层位',h:'/#update'},
+    {t:'溏心蛋煮几分钟才能流心',h:'/#faq'},
+    {t:'溏心蛋怎么剥壳不破',h:'/#faq'},
+    {t:'溏心蛋冷藏能放几天',h:'/#faq'},
+    {t:'溏心蛋给孩子吃安全吗',h:'/#faq'},
+    {t:'溏心蛋用什么锅煮',h:'/#faq'},
+    {t:'按可复现程度排的五个配方榜单',h:'/#rank'},
+    {t:'用户评价：味付玉子与咖喱溏心蛋复做反馈',h:'/#reviews'},
+    {t:'相关资讯：盒装蛋日期码与冷藏柜温度',h:'/#news'}
+  ];
+  function doSearch(){
+    var q=(input.value||'').trim();
+    if(!q){box.classList.remove('on');box.innerHTML='';return;}
+    var hits=index.filter(function(it){return it.t.indexOf(q)>-1;});
+    if(hits.length===0){
+      box.innerHTML='<p style="margin:0;color:#8b8073">没有找到与“'+q.replace(/[<>&]/g,'')+'”相关的条目，试试“剥壳”“咖喱”“6分30秒”。</p>';
+    }else{
+      box.innerHTML=hits.slice(0,6).map(function(it){
+        return '<a href="'+it.h+'">'+it.t+'</a>';
+      }).join('');
+    }
+    box.classList.add('on');
+  }
+  btn.addEventListener('click',doSearch);
+  input.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();doSearch();}
+  });
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.search-wrap')){box.classList.remove('on');}
+  });
+})();
+</script>
+</body>
+  </html>
