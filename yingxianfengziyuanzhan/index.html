@@ -1,0 +1,1118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影先锋资源站2020-经典影视资源归档与观影指南</title>
+<meta name="description" content="影先锋资源站2020经典影视资源归档专区，收录2020年前后华语剧集、院线电影与冷门佳作条目，提供版本差异对照、修复画质说明与观影顺序指南，帮影迷按年份、题材与演员索引查找可核对的片目信息。">
+<meta name="keywords" content="影先锋资源站2020">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b2d'/%3E%3Cpath d='M18 20h28v6H24v4h20v6H24v4h22v6H18z' fill='%23e8b84b'/%3E%3Ccircle cx='46' cy='44' r='6' fill='%23c9d6e4'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#101728;
+  --ink-2:#2a3650;
+  --paper:#f5f2ec;
+  --paper-2:#ffffff;
+  --line:#d8d2c6;
+  --line-soft:#e9e4da;
+  --gold:#b8862a;
+  --gold-soft:#f0e2c2;
+  --teal:#1f6f6b;
+  --teal-soft:#dcecea;
+  --red:#9c3b3b;
+  --radius:10px;
+  --radius-sm:6px;
+  --shadow:0 1px 2px rgba(16,23,40,.06),0 8px 24px -12px rgba(16,23,40,.18);
+  --fs-h1:clamp(1.7rem,4.6vw,2.6rem);
+  --fs-h2:clamp(1.25rem,2.6vw,1.55rem);
+  --fs-h3:clamp(1.02rem,1.9vw,1.15rem);
+  --fs-body:.975rem;
+  --fs-sm:.85rem;
+  --fs-xs:.78rem;
+  --sp:clamp(1rem,2.2vw,1.5rem);
+  --maxw:1180px;
+  --sticky-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:var(--fs-body);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+button{font:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{margin:0;line-height:1.35;color:var(--ink);font-weight:700}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .85em;padding-left:1.2em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(.85rem,3vw,1.6rem)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:.6em 1em;z-index:200}
+.skip:focus{left:8px;top:8px}
+
+/* ---------- sticky group ---------- */
+.sticky-group{position:sticky;top:0;z-index:60}
+.announce{
+  background:var(--ink);
+  color:#e6e9f0;
+  font-size:var(--fs-sm);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.announce .wrap{
+  display:flex;align-items:center;gap:.6em;flex-wrap:wrap;
+  padding-top:.42em;padding-bottom:.42em;
+}
+.announce .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex:none}
+.announce strong{color:#fff;font-weight:600}
+.announce .a-date{color:#a9b4c6;font-variant-numeric:tabular-nums}
+.announce a{color:var(--gold-soft);text-decoration:underline;text-underline-offset:2px}
+header.site{
+  background:rgba(245,242,236,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.hd-inner{
+  display:flex;align-items:center;gap:1rem;
+  padding-top:.55rem;padding-bottom:.55rem;
+}
+.brand{display:flex;align-items:center;gap:.6rem;flex:none}
+.brand svg{width:40px;height:40px;flex:none;border-radius:9px}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15}
+.brand-txt .bt-main{font-weight:800;font-size:1.05rem;letter-spacing:.02em}
+.brand-txt .bt-sub{font-size:.68rem;color:var(--ink-2);letter-spacing:.14em}
+nav.main-nav{flex:1;min-width:0}
+nav.main-nav ul{
+  display:flex;gap:.15rem;list-style:none;margin:0;padding:0;
+  overflow-x:auto;scrollbar-width:thin;
+}
+nav.main-nav a{
+  display:block;padding:.42em .62em;white-space:nowrap;
+  color:var(--ink-2);font-size:.9rem;border-radius:var(--radius-sm);
+}
+nav.main-nav a:hover{background:var(--gold-soft);color:var(--ink);text-decoration:none}
+nav.main-nav a.active{background:var(--ink);color:#fff}
+.hd-tools{display:flex;align-items:center;gap:.5rem;flex:none}
+.search{
+  display:flex;align-items:center;border:1px solid var(--line);
+  background:var(--paper-2);border-radius:999px;padding:.18em .3em .18em .75em;
+}
+.search input{
+  border:0;background:transparent;outline:none;width:11.5rem;
+  font:inherit;font-size:.86rem;color:var(--ink);padding:.25em 0;
+}
+.search button{
+  border:0;background:var(--ink);color:#fff;border-radius:999px;
+  padding:.32em .8em;font-size:.8rem;cursor:pointer;
+}
+.search button:hover{background:var(--teal)}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:var(--paper-2);
+  border-radius:var(--radius-sm);padding:.4em .6em;cursor:pointer;font-size:.85rem;
+  color:var(--ink);
+}
+.search-feedback{
+  font-size:var(--fs-xs);color:var(--red);padding:.3em 0 0;min-height:1.2em;
+}
+.search-feedback[data-state="ok"]{color:var(--teal)}
+
+/* offsets for sticky */
+section[id],div[id].anchor{scroll-margin-top:calc(var(--sticky-h) + 12px)}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 380px at 85% -12%, rgba(184,134,42,.22), transparent 62%),
+    radial-gradient(700px 300px at -8% 110%, rgba(31,111,107,.16), transparent 60%),
+    var(--ink);
+  color:#eef1f6;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.hero-inner{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1rem,3vw,2.4rem);
+  align-items:center;padding-top:clamp(1.6rem,4vw,3rem);padding-bottom:clamp(1.6rem,4vw,3rem);
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:.5em;font-size:var(--fs-xs);
+  letter-spacing:.18em;color:#e6c98a;text-transform:uppercase;
+  border:1px solid rgba(230,201,138,.45);border-radius:999px;padding:.22em .85em;
+}
+.hero h1{
+  font-size:var(--fs-h1);color:#fff;margin:.5em 0 .35em;letter-spacing:.01em;
+}
+.hero-lede{color:#c6cede;max-width:34em;font-size:.96rem}
+.hero-lede b{color:#f2e6c8;font-weight:600}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+.btn{
+  display:inline-block;padding:.5em 1.15em;border-radius:999px;font-size:.9rem;
+  border:1px solid transparent;cursor:pointer;transition:transform .18s ease, background .18s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--gold);color:#1a1408;font-weight:700}
+.btn-primary:hover{background:#d09a33}
+.btn-ghost{border-color:rgba(238,241,246,.4);color:#eef1f6}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.hero-stats{
+  display:flex;gap:1.4rem;margin-top:1.5rem;flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,.14);padding-top:.9rem;
+}
+.hero-stats div{min-width:5.6rem}
+.hero-stats .num{font-size:1.3rem;font-weight:800;color:#f2e6c8;font-variant-numeric:tabular-nums;display:block}
+.hero-stats .lab{font-size:var(--fs-xs);color:#a9b4c6;letter-spacing:.05em}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:420px;height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35))}
+
+/* ---------- layout ---------- */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(1rem,2.4vw,2rem);
+  padding-top:clamp(1.4rem,3vw,2.4rem);padding-bottom:clamp(1.6rem,3vw,2.6rem);
+  align-items:start;
+}
+main{min-width:0}
+aside{position:sticky;top:calc(var(--sticky-h) + 16px);min-width:0}
+.card{
+  background:var(--paper-2);border:1px solid var(--line-soft);border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.sec{padding:clamp(1rem,2.4vw,1.6rem);margin-bottom:clamp(1rem,2.2vw,1.5rem)}
+.sec-hd{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;margin-bottom:.9rem;
+  border-bottom:1px solid var(--line-soft);padding-bottom:.6rem}
+.sec-hd h2{font-size:var(--fs-h2)}
+.sec-hd .hint{font-size:var(--fs-xs);color:var(--ink-2);letter-spacing:.06em}
+.sec-hd .more{margin-left:auto;font-size:var(--fs-sm)}
+.sec-hd .more a{color:var(--teal)}
+
+/* lists */
+.tag-list{display:flex;flex-wrap:wrap;gap:.45rem;list-style:none;padding:0;margin:0}
+.tag-list a,.tag{
+  display:inline-block;padding:.24em .7em;border:1px solid var(--line);
+  border-radius:999px;font-size:var(--fs-sm);color:var(--ink-2);background:#fbf9f4;
+}
+.tag-list a:hover{border-color:var(--gold);color:var(--ink);text-decoration:none;background:var(--gold-soft)}
+
+.timeline{list-style:none;margin:0;padding:0 0 0 1.1rem;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 1rem .9rem}
+.timeline li::before{
+  content:"";position:absolute;left:-1.53rem;top:.45em;width:9px;height:9px;
+  background:var(--paper-2);border:2px solid var(--gold);border-radius:50%;
+}
+.timeline time{display:block;font-size:var(--fs-xs);color:var(--teal);font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.timeline .tl-t{font-weight:600}
+.timeline .tl-d{font-size:var(--fs-sm);color:var(--ink-2)}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem}
+.pick{border:1px solid var(--line-soft);border-radius:var(--radius-sm);overflow:hidden;background:#fbfaf6;display:flex;flex-direction:column}
+.pick img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.pick .pk-body{padding:.6rem .75rem .75rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.pick .pk-t{font-weight:700;font-size:.95rem;line-height:1.35}
+.pick .pk-m{font-size:var(--fs-xs);color:var(--ink-2)}
+.pick .pk-x{font-size:var(--fs-sm);color:var(--ink-2);flex:1}
+.pick .pk-f{font-size:var(--fs-xs);color:var(--gold);font-weight:600;font-variant-numeric:tabular-nums}
+
+.compact-list{list-style:none;padding:0;margin:0}
+.compact-list li{
+  display:flex;gap:.7rem;align-items:flex-start;
+  padding:.55rem 0;border-bottom:1px dashed var(--line-soft);
+}
+.compact-list li:last-child{border-bottom:0}
+.compact-list .cl-date{font-size:var(--fs-xs);color:var(--teal);flex:none;width:4.2rem;font-variant-numeric:tabular-nums;padding-top:.15em}
+.compact-list .cl-t{font-weight:600;font-size:.93rem}
+.compact-list .cl-d{font-size:var(--fs-sm);color:var(--ink-2)}
+
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips a{
+  background:var(--teal-soft);color:#144d4a;border-radius:var(--radius-sm);
+  padding:.32em .7em;font-size:var(--fs-sm);border:1px solid #c4dedb;
+}
+.chips a:hover{background:#cbe3e0;text-decoration:none}
+
+.steps{list-style:none;counter-reset:st;padding:0;margin:0;display:grid;gap:.8rem}
+.steps li{counter-increment:st;position:relative;padding:.2rem 0 .2rem 2.3rem;min-height:2rem}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);position:absolute;left:0;top:0;
+  width:1.75rem;height:1.75rem;border-radius:50%;background:var(--ink);color:#f2e6c8;
+  display:grid;place-items:center;font-size:.78rem;font-weight:700;font-variant-numeric:tabular-nums;
+}
+.steps li strong{display:block;font-size:.95rem}
+.steps li span{font-size:var(--fs-sm);color:var(--ink-2)}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+.compare > div{padding:.7rem .85rem;font-size:var(--fs-sm)}
+.compare > div:first-child{background:#fbf7ee;border-right:1px solid var(--line)}
+.compare > div:nth-child(2){background:#f3f7f6}
+.compare .cp-h{font-weight:700;font-size:.88rem;margin-bottom:.25rem;color:var(--ink)}
+.compare .cp-h small{font-weight:400;color:var(--ink-2);font-size:var(--fs-xs);margin-left:.35em}
+
+.faq details{
+  border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+  padding:.15rem .85rem;margin-bottom:.55rem;background:#fbfaf6;
+}
+.faq summary{
+  cursor:pointer;font-weight:600;font-size:.93rem;padding:.55rem 0;
+  list-style-position:outside;color:var(--ink);
+}
+.faq summary::marker{color:var(--gold)}
+.faq details[open]{background:#fff}
+.faq details[open] summary{border-bottom:1px dashed var(--line-soft);margin-bottom:.4rem}
+.faq .ans{font-size:var(--fs-sm);color:var(--ink-2);padding-bottom:.6rem}
+
+.comments{list-style:none;padding:0;margin:0;display:grid;gap:.75rem}
+.comments li{border-left:3px solid var(--gold-soft);padding:.15rem 0 .15rem .8rem}
+.comments .cm-h{display:flex;gap:.5rem;align-items:baseline;flex-wrap:wrap;font-size:var(--fs-xs);color:var(--ink-2)}
+.comments .cm-name{font-weight:700;color:var(--ink);font-size:var(--fs-sm)}
+.comments .cm-body{font-size:var(--fs-sm);margin-top:.1rem}
+.comments .cm-body b{color:var(--red);font-weight:600}
+
+.quote-card{
+  background:linear-gradient(180deg,#fffdf6,#f6f1e3);
+  border:1px solid var(--gold-soft);border-radius:var(--radius);
+  padding:1rem 1.1rem;position:relative;
+}
+.quote-card::before{
+  content:"“";position:absolute;top:-.15em;left:.5rem;font-size:3rem;color:var(--gold);
+  opacity:.35;font-family:Georgia,serif;line-height:1;
+}
+.quote-card blockquote{margin:.2rem 0 .4rem 1.1rem;font-size:.95rem}
+.quote-card cite{font-style:normal;font-size:var(--fs-xs);color:var(--ink-2);display:block;margin-left:1.1rem}
+
+.deep{border-top:3px solid var(--ink);padding-top:1rem}
+.deep h2{font-size:var(--fs-h2);margin-bottom:.3rem}
+.deep .deep-meta{font-size:var(--fs-xs);color:var(--ink-2);margin-bottom:.9rem;letter-spacing:.04em}
+.deep h3{font-size:var(--fs-h3);margin:1.1rem 0 .4rem;padding-left:.55rem;border-left:4px solid var(--gold)}
+.deep p{font-size:.95rem}
+.judge-box{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;margin:.8rem 0 1rem;
+}
+.judge-box .jb-h{background:var(--ink);color:#f2e6c8;font-size:var(--fs-sm);font-weight:700;padding:.45rem .8rem}
+.judge-box table{width:100%;border-collapse:collapse;font-size:var(--fs-sm)}
+.judge-box th,.judge-box td{padding:.45rem .8rem;border-bottom:1px solid var(--line-soft);text-align:left;vertical-align:top}
+.judge-box th{background:#fbf7ee;font-weight:600;width:34%;color:var(--ink)}
+.judge-box tr:last-child td,.judge-box tr:last-child th{border-bottom:0}
+
+.rank-list{list-style:none;counter-reset:rk;padding:0;margin:0}
+.rank-list li{
+  counter-increment:rk;display:flex;gap:.7rem;align-items:flex-start;
+  padding:.55rem 0;border-bottom:1px dashed var(--line-soft);
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+  content:counter(rk);flex:none;width:1.5rem;height:1.5rem;border-radius:50%;
+  background:var(--gold-soft);color:#5b420f;display:grid;place-items:center;
+  font-weight:700;font-size:.78rem;font-variant-numeric:tabular-nums;
+}
+.rank-list li:nth-child(-n+3)::before{background:var(--gold);color:#fff}
+.rank-list .rk-t{font-weight:600;font-size:.93rem}
+.rank-list .rk-d{font-size:var(--fs-sm);color:var(--ink-2)}
+
+/* sidebar */
+.side-card{padding:1rem 1.05rem;margin-bottom:1rem}
+.side-card h2,.side-card h3{font-size:1rem;margin-bottom:.55rem;padding-bottom:.4rem;border-bottom:1px solid var(--line-soft)}
+.side-nav ul{list-style:none;padding:0;margin:0;display:grid;gap:.15rem}
+.side-nav a{
+  display:block;font-size:var(--fs-sm);padding:.3em .55em;border-left:3px solid transparent;
+  color:var(--ink-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+}
+.side-nav a:hover{background:#f7f3e9;text-decoration:none;color:var(--ink)}
+.side-nav a.current{border-left-color:var(--gold);background:var(--gold-soft);color:var(--ink);font-weight:600}
+.side-card .mini{font-size:var(--fs-sm);color:var(--ink-2)}
+.side-card .mini li{margin-bottom:.35rem}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:.25rem .6rem;font-size:var(--fs-sm);margin:0}
+.kv dt{color:var(--ink-2)}
+.kv dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+
+/* footer */
+footer.site{
+  background:var(--ink);color:#c6cede;margin-top:1rem;
+  border-top:4px solid var(--gold);
+}
+.ft-inner{
+  display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:clamp(1rem,2.4vw,2rem);
+  padding-top:clamp(1.4rem,3vw,2.2rem);padding-bottom:1rem;
+}
+footer.site h3{color:#f2e6c8;font-size:.92rem;margin-bottom:.55rem;letter-spacing:.04em}
+footer.site .ft-brand{display:flex;align-items:center;gap:.6rem;margin-bottom:.55rem}
+footer.site .ft-brand svg{width:34px;height:34px;border-radius:8px;flex:none}
+footer.site .ft-brand strong{color:#fff;font-size:1rem}
+footer.site p{font-size:var(--fs-sm);margin-bottom:.6rem}
+footer.site ul{list-style:none;padding:0;margin:0;font-size:var(--fs-sm)}
+footer.site ul li{margin-bottom:.32rem}
+footer.site a{color:#c6cede}
+footer.site a:hover{color:#f2e6c8}
+.ft-base{
+  border-top:1px solid rgba(255,255,255,.12);font-size:var(--fs-xs);color:#8f9bb0;
+  padding:.85rem 0 1.3rem;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;align-items:center;
+}
+.ft-base .dotsep{opacity:.5}
+
+/* misc */
+.note{font-size:var(--fs-xs);color:var(--ink-2);background:#f7f3e9;border:1px dashed var(--line);border-radius:var(--radius-sm);padding:.5rem .7rem}
+.backtop{
+  position:fixed;right:1rem;bottom:1.1rem;z-index:70;
+  width:2.6rem;height:2.6rem;border-radius:50%;border:1px solid var(--line);
+  background:var(--paper-2);color:var(--ink);box-shadow:var(--shadow);
+  display:none;place-items:center;cursor:pointer;
+}
+.backtop.show{display:grid}
+.backtop:hover{background:var(--gold-soft)}
+.backtop svg{width:16px;height:16px}
+
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  aside{position:static;order:2}
+  main{order:1}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art{order:-1;max-width:320px;margin:0 auto}
+  .ft-inner{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .hd-inner{flex-wrap:wrap}
+  nav.main-nav{order:3;flex-basis:100%}
+  nav.main-nav ul{display:none}
+  nav.main-nav.open ul{display:flex;flex-wrap:wrap}
+  .menu-btn{display:inline-block}
+  .search input{width:7.5rem}
+  .hd-tools{order:2;margin-left:auto}
+  .grid-3,.grid-2{grid-template-columns:minmax(0,1fr)}
+  .compare{grid-template-columns:1fr}
+  .compare > div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .ft-inner{grid-template-columns:1fr}
+  .backtop{bottom:.8rem;right:.8rem;width:2.4rem;height:2.4rem}
+}
+@media (max-width:400px){
+  .brand-txt .bt-sub{display:none}
+  .search input{width:6.2rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="sticky-group">
+  <div class="announce" role="region" aria-label="站点更新公告">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <strong>影先锋资源站2020</strong>
+      <span>公告：</span>
+      <span>11月7日补录《隐秘的角落》导演剪辑版 6 分 42 秒新增片段说明，同时修正《八佰》点映场次表两处时间。</span>
+      <span class="a-date">2026-11-07</span>
+      <a href="/#updates">查看更新明细</a>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="wrap hd-inner">
+      <div class="brand">
+        <svg viewBox="0 0 64 64" role="img" aria-label="影先锋资源站2020 标志图形">
+          <rect width="64" height="64" rx="14" fill="#0f1b2d"/>
+          <path d="M18 20h28v6H24v4h20v6H24v4h22v6H18z" fill="#e8b84b"/>
+          <circle cx="46" cy="44" r="6" fill="#c9d6e4"/>
+          <circle cx="46" cy="44" r="2.2" fill="#0f1b2d"/>
+        </svg>
+        <span class="brand-txt">
+          <span class="bt-main">影先锋资源站2020</span>
+          <span class="bt-sub">经典片目归档</span>
+        </span>
+      </div>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选片单</a></li>
+          <li><a href="/#updates">更新日志</a></li>
+          <li><a href="/#catalog">分类索引</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观影指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">影迷评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">编辑榜单</a></li>
+        </ul>
+      </nav>
+      <div class="hd-tools">
+        <form class="search" id="searchForm" role="search" aria-label="站内条目查找">
+          <input id="searchInput" type="search" placeholder="搜片名／导演／年份" aria-label="输入片名、导演或年份">
+          <button type="submit">查找</button>
+        </form>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">栏目菜单</button>
+      </div>
+    </div>
+    <div class="wrap"><div class="search-feedback" id="searchFeedback" aria-live="polite"></div></div>
+  </header>
+</div>
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="hero-kicker">2020 · 华语影视归档</span>
+      <h1 id="heroTitle">影先锋资源站2020</h1>
+      <p class="hero-lede">按年份归档的华语剧集与院线电影片目索引，覆盖 <b>2020 年前后 18 个月</b> 的上映信息、版本差异、修复画质说明和演员表核对。每条目附来源平台与核对日期，方便影迷查证后再决定看哪个版本。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#picks">浏览精选片单</a>
+        <a class="btn btn-ghost" href="/#catalog">按题材查片</a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="num">1,286</span><span class="lab">在册条目</span></div>
+        <div><span class="num">74</span><span class="lab">版本对照</span></div>
+        <div><span class="num">319</span><span class="lab">修复说明</span></div>
+        <div><span class="num">11-07</span><span class="lab">最近校对</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="img">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e8b84b"/>
+            <stop offset="1" stop-color="#b8862a"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#1f6f6b"/>
+            <stop offset="1" stop-color="#2a9d96"/>
+          </linearGradient>
+        </defs>
+        <rect x="16" y="26" width="388" height="288" rx="16" fill="#17233a" stroke="#2c3c58"/>
+        <rect x="16" y="26" width="388" height="34" rx="16" fill="#0f1b2d"/>
+        <rect x="16" y="44" width="388" height="16" fill="#0f1b2d"/>
+        <circle cx="38" cy="43" r="5" fill="#9c3b3b"/>
+        <circle cx="54" cy="43" r="5" fill="#e8b84b"/>
+        <circle cx="70" cy="43" r="5" fill="#2a9d96"/>
+        <rect x="36" y="80" width="120" height="14" rx="7" fill="#2c3c58"/>
+        <rect x="36" y="104" width="210" height="10" rx="5" fill="#233350"/>
+        <rect x="36" y="124" width="176" height="10" rx="5" fill="#233350"/>
+        <rect x="36" y="158" width="108" height="80" rx="8" fill="url(#g2)" opacity=".85"/>
+        <rect x="154" y="158" width="108" height="80" rx="8" fill="url(#g1)" opacity=".85"/>
+        <rect x="272" y="158" width="108" height="80" rx="8" fill="#2c3c58"/>
+        <path d="M78 214l14-22 14 22z" fill="#0f1b2d" opacity=".55"/>
+        <circle cx="208" cy="198" r="16" fill="#0f1b2d" opacity=".45"/>
+        <rect x="292" y="176" width="68" height="8" rx="4" fill="#3d5074"/>
+        <rect x="292" y="192" width="52" height="8" rx="4" fill="#3d5074"/>
+        <rect x="292" y="208" width="60" height="8" rx="4" fill="#3d5074"/>
+        <rect x="36" y="258" width="344" height="1.5" fill="#2c3c58"/>
+        <rect x="36" y="274" width="90" height="22" rx="11" fill="#e8b84b"/>
+        <rect x="138" y="274" width="90" height="22" rx="11" fill="#233350"/>
+        <rect x="240" y="274" width="140" height="22" rx="11" fill="#233350"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout">
+  <main id="main">
+
+    <!-- 1 领域概览 -->
+    <section class="sec card" id="overview" aria-labelledby="ovTitle">
+      <div class="sec-hd">
+        <h2 id="ovTitle">领域概览：2020 年华语片目为什么值得单独归档</h2>
+        <span class="hint">覆盖 2019-12 至 2021-06</span>
+      </div>
+      <p>2020 年内地影院在 1 月 24 日停业、7 月 20 日陆续复业，中间隔了近半年。这段空档让一批原定春节档、五一档的片子改期到暑期与国庆，也让《隐秘的角落》《沉默的真相》等 12 集短剧在家庭屏幕上被集中讨论。片目按正式上映或上线时间归档，改期的片子以首次公映日为准，改档信息写进条目附注。</p>
+      <p>归档时最常遇到三类麻烦：同一部片有院线版、导演剪辑版和流媒体版，片长差 3 到 20 分钟；修复版与原始播出画面的调色不同；部分影片的演职员表在平台端被裁掉。条目里的“版本差异”字段专门记这些，注明来源是片方通稿、平台页面还是影迷逐帧比对。</p>
+      <div class="compare" style="margin-top:.9rem">
+        <div>
+          <div class="cp-h">院线公映版 <small>以 2020-08-21《八佰》为例</small></div>
+          片长 147 分钟，含片头龙标与发行方贴片；点映场次集中在 8 月 14 日至 17 日，部分影院加场。演职员表完整保留。
+        </div>
+        <div>
+          <div class="cp-h">网络上线版 <small>同片，2020-09-22 起</small></div>
+          片长 142 分钟，删去贴片与部分过场空镜；片尾字幕滚动速度加快，职员表字号缩小。画质标注为 1080P。
+        </div>
+      </div>
+      <p class="note">条目字段：片名、首映/上线日期、发行方、片长、版本、画质来源、核对日期。核对日期统一取平台页面截图时间。</p>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="sec card" id="picks" aria-labelledby="pkTitle">
+      <div class="sec-hd">
+        <h2 id="pkTitle">精选片单：六部值得先查版本再看的条目</h2>
+        <a class="more" href="/#catalog">更多分类 →</a>
+      </div>
+      <div class="grid-3">
+        <article class="pick">
+          <img src="https://picsum.photos/seed/yxf-hydl/480/300" width="480" height="300" loading="lazy" alt="《隐秘的角落》湛江取景地海边石阶剧照示意">
+          <div class="pk-body">
+            <h3 class="pk-t">隐秘的角落 导演剪辑版</h3>
+            <p class="pk-m">2020-06-16 首播 · 12 集</p>
+            <p class="pk-x">11 月 7 日补录的 6 分 42 秒新增片段集中在第 6 集结尾。核对时以爱奇艺会员版为准，电视端版本不含该段。</p>
+            <span class="pk-f">版本差异 3 处</span>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/yxf-ba/480/300" width="480" height="300" loading="lazy" alt="《八佰》四行仓库场景色调示意">
+          <div class="pk-body">
+            <h3 class="pk-t">八佰 院线公映版</h3>
+            <p class="pk-m">2020-08-21 公映 · 147 分钟</p>
+            <p class="pk-x">点映场次表在 11 月 5 日修正两处时间：8 月 14 日 19:30 场改为 19:40，8 月 16 日 14:00 场取消。</p>
+            <span class="pk-f">场次勘误 2 条</span>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/yxf-cmdz/480/300" width="480" height="300" loading="lazy" alt="《沉默的真相》地铁站场景示意">
+          <div class="pk-body">
+            <h3 class="pk-t">沉默的真相 网络版</h3>
+            <p class="pk-m">2020-09-16 上线 · 12 集</p>
+            <p class="pk-x">第 1 集片头 2 分 10 秒的地铁段落，平台版与卫视版配乐不同，条目已并列两条音轨说明。</p>
+            <span class="pk-f">音轨差异 1 处</span>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/yxf-sddh/480/300" width="480" height="300" loading="lazy" alt="《送你一朵小红花》医院走廊场景示意">
+          <div class="pk-body">
+            <h3 class="pk-t">送你一朵小红花</h3>
+            <p class="pk-m">2020-12-31 公映 · 128 分钟</p>
+            <p class="pk-x">跨年档上映，首日排片 42.3%。条目记录 12 月 31 日 22:10 场次与 2021 年 1 月 1 日零点场的海报差异。</p>
+            <span class="pk-f">跨年场次 2 版</span>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/yxf-dlb/480/300" width="480" height="300" loading="lazy" alt="《大赢家》银行场景示意">
+          <div class="pk-body">
+            <h3 class="pk-t">大赢家 线上首播版</h3>
+            <p class="pk-m">2020-03-20 上线 · 97 分钟</p>
+            <p class="pk-x">原定 2 月 21 日院线上映，改为字节跳动平台免费首播。条目注明该版无院线贴片，片尾字幕提前 40 秒出现。</p>
+            <span class="pk-f">改档记录 1 条</span>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/yxf-tsbh/480/300" width="480" height="300" loading="lazy" alt="《唐人街探案3》东京街头场景示意">
+          <div class="pk-body">
+            <h3 class="pk-t">唐人街探案3 改档条目</h3>
+            <p class="pk-m">2021-02-12 公映 · 136 分钟</p>
+            <p class="pk-x">从 2020 年春节档撤出，档期变动写进附注。2020 年 1 月 23 日撤档通知与 2021 年 1 月 29 日预售开启时间均留档。</p>
+            <span class="pk-f">撤档间隔 386 天</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="sec card" id="updates" aria-labelledby="upTitle">
+      <div class="sec-hd">
+        <h2 id="upTitle">最新更新：本周校对的条目与勘误</h2>
+        <span class="hint">截至 2026-11-07</span>
+      </div>
+      <ul class="compact-list">
+        <li>
+          <span class="cl-date">11-07</span>
+          <div><span class="cl-t">补录《隐秘的角落》第 6 集结尾 6 分 42 秒片段</span><span class="cl-d">——来源：爱奇艺会员版 2026 年 10 月 30 日片源，与 2020 年首播版逐帧比对。</span></div>
+        </li>
+        <li>
+          <span class="cl-date">11-06</span>
+          <div><span class="cl-t">《棒！少年》纪录片的两个版本片长并列</span><span class="cl-d">——院线版 108 分钟，2020 年 12 月 11 日公映；网络版 102 分钟，2021 年 2 月 5 日上线，删去 6 分钟训练段落。</span></div>
+        </li>
+        <li>
+          <span class="cl-date">11-05</span>
+          <div><span class="cl-t">《八佰》点映场次表夜间场时间勘误</span><span class="cl-d">——核对上海、杭州两地 8 家影院的排片截图，修正两处，新增 1 条改签记录。</span></div>
+        </li>
+        <li>
+          <span class="cl-date">11-04</span>
+          <div><span class="cl-t">《风平浪静》演职员表补全</span><span class="cl-d">——2020 年 11 月 6 日公映，补齐摄影指导与美术指导姓名，来源为片尾字幕截图。</span></div>
+        </li>
+        <li>
+          <span class="cl-date">11-03</span>
+          <div><span class="cl-t">《一秒钟》修复画质说明更新</span><span class="cl-d">——2020 年 11 月 27 日公映，补充 28 分钟删减段落在流媒体版的呈现方式，标注为“未公开素材恢复”。</span></div>
+        </li>
+        <li>
+          <span class="cl-date">11-02</span>
+          <div><span class="cl-t">《棋魂》真人版第 1 至 3 集片头版本差异</span><span class="cl-d">——2020 年 10 月 27 日上线，平台版片头 1 分 18 秒，海外版 1 分 02 秒，配乐尾音不同。</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="sec card" id="catalog" aria-labelledby="ctTitle">
+      <div class="sec-hd">
+        <h2 id="ctTitle">分类入口：按题材、平台、年份三个维度切</h2>
+        <span class="hint">点击进入对应频道</span>
+      </div>
+      <h3 style="font-size:.9rem;margin-bottom:.45rem">题材频道</h3>
+      <div class="chips">
+        <a href="/#picks">悬疑短剧</a>
+        <a href="/#deep">战争历史片</a>
+        <a href="/#picks">现实主义剧情片</a>
+        <a href="/#guide">青春成长片</a>
+        <a href="/#picks">喜剧改档片</a>
+        <a href="/#comments">纪录片</a>
+        <a href="/#updates">古装传奇剧</a>
+        <a href="/#rank">家庭伦理剧</a>
+      </div>
+      <h3 style="font-size:.9rem;margin:.95rem 0 .45rem">上线平台</h3>
+      <div class="chips">
+        <a href="/#updates">爱奇艺独播</a>
+        <a href="/#updates">腾讯视频独播</a>
+        <a href="/#updates">优酷剧集</a>
+        <a href="/#updates">芒果TV 短剧</a>
+        <a href="/#updates">字节跳动首播</a>
+        <a href="/#news">院线转网</a>
+      </div>
+      <h3 style="font-size:.9rem;margin:.95rem 0 .45rem">年份索引</h3>
+      <ul class="tag-list">
+        <li><a href="/#picks">2019-12 首映</a></li>
+        <li><a href="/#picks">2020 上半年</a></li>
+        <li><a href="/#updates">2020 暑期档</a></li>
+        <li><a href="/#updates">2020 国庆档</a></li>
+        <li><a href="/#rank">2020 跨年档</a></li>
+        <li><a href="/#news">2021 春节档</a></li>
+        <li><a href="/#news">撤档改期片</a></li>
+      </ul>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="sec card deep" id="deep" aria-labelledby="dpTitle">
+      <h2 id="dpTitle">深度解析：2020 年这批片子的“版本问题”比“片源问题”更值得盯</h2>
+      <p class="deep-meta">判断依据：74 条版本对照记录、319 条修复说明、11 月 7 日片源核对</p>
+
+      <h3>判断一：2020 年国产片的版本差，主要来自“发行窗口”而不是审查删改</h3>
+      <p>把 74 条对照记录按差异来源分类，发行窗口切换造成的差异占 41 条，包括院线转流媒体时删贴片、缩短字幕、调整片头顺序。审查删改造成的差异只有 9 条，且集中在 3 部片上。这个比例和 2019 年同期的对照记录不同：2019 年 58 条里，审查相关 14 条。</p>
+      <div class="judge-box">
+        <div class="jb-h">可核对结构：版本差异来源拆分（2020 年归档 74 条）</div>
+        <table>
+          <tr><th>差异来源</th><td>发行窗口切换 41 条 · 审查删改 9 条 · 修复调色 14 条 · 字幕/配音 7 条 · 未归类 3 条</td></tr>
+          <tr><th>核对方式</th><td>同片两版逐段比对片长与片头片尾；调色差异取同一帧截图比色值；字幕差异核对送审字幕表</td></tr>
+          <tr><th>可反驳点</th><td>若把 8 月复业后“补拍上映”的 3 部片计入审查类，比例会变；这 3 部暂归入未归类</td></tr>
+        </table>
+      </div>
+
+      <h3>判断二：《隐秘的角落》的讨论热度在 2026 年仍有残余，但集中在校验而非剧情</h3>
+      <p>2020 年 6 月 16 日首播后，剧集在 6 月 21 日至 25 日出现第一轮集中讨论，关键词是“张东升”“爬山”。到 2026 年 11 月，站内与外部平台的二次讨论里，出现频率最高的是“导演剪辑版新增 6 分 42 秒”“第 6 集结尾配乐替换”。这说明讨论已经转向版本核对。11 月 7 日补录的片段长度来自片方 10 月 30 日上线的会员版，不是网传的 8 分钟。</p>
+
+      <h3>判断三：2020 年短剧的“12 集”是一种发行规格，不是统一标准</h3>
+      <p>《隐秘的角落》12 集、《沉默的真相》12 集、《摩天大楼》16 集、《白色月光》12 集，四部剧单片时长从 42 分钟到 58 分钟不等。按总时长算，《摩天大楼》16 集 × 约 38 分钟 ≈ 608 分钟，比 12 集 × 45 分钟的 540 分钟更长。所谓“短剧”只描述集数区间，不能直接推导总时长。归档时以总时长作为比对字段，避免把 12 集一律当成同量级。</p>
+
+      <h3>判断四：撤档片的时间线，比复映片更容易出错</h3>
+      <p>《唐人街探案3》2020 年 1 月 23 日撤档，2021 年 2 月 12 日公映，间隔 386 天。《紧急救援》2020 年 1 月 23 日撤档，2020 年 12 月 18 日公映，间隔 330 天。两条时间线在多个转载页面里被写成“春节撤档、次年春节上映”，实际《紧急救援》并没有回到春节档。条目里把撤档通知日期、新档期公布日期、公映日期分成三列，任何转载只抄其中一列就会出错。</p>
+
+      <h3>判断五：修复画质不等于原片还原，2020 年片目的 4K 标注要分开看</h3>
+      <p>319 条修复说明里，有 96 条标注“AI 修复”，112 条标注“原始底片扫描”，其余为平台转码。AI 修复版本在人物面部边缘容易出现涂抹感，尤其夜戏。以《一秒钟》为例，流媒体 4K 版的沙丘夜景，暗部噪点被抹平后，颗粒感消失；而 2020 年 11 月 27 日院线版的胶片颗粒保留明显。两者不能互相替代，条目里单独标注。</p>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="sec card" id="guide" aria-labelledby="gdTitle">
+      <div class="sec-hd">
+        <h2 id="gdTitle">体验指南：查一条片目并判断该看哪版的四个步骤</h2>
+      </div>
+      <ol class="steps">
+        <li><strong>先确认首次公映日</strong><span>以片方通稿或影院排片截图为据。改档片看“新档期公布日”，不看预告片发布日期。</span></li>
+        <li><strong>比对片长而不是集数</strong><span>剧集把每集时长加起来，电影看片尾字幕结束时间。相差 3 分钟以上就需要单独建版本条目。</span></li>
+        <li><strong>查画质来源标注</strong><span>区分“原始底片扫描”“AI 修复”“平台转码”。AI 修复版适合小屏，夜景与大银幕观看优先选底片扫描版。</span></li>
+        <li><strong>核对演职员表完整性</strong><span>部分平台版裁掉片尾滚动字幕，导演、摄影、美术等署名可能缺失。条目附截图时间，方便复核。</span></li>
+      </ol>
+      <p class="note">勘误入口：发现日期、片长或署名错误，可在影迷评论板块留下片名与截图时间，编辑在 48 小时内回填。</p>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="sec card faq" id="faq" aria-labelledby="fqTitle">
+      <div class="sec-hd">
+        <h2 id="fqTitle">常见问题：关于 2020 年片目版本与画质的问答</h2>
+      </div>
+      <details>
+        <summary>《隐秘的角落》导演剪辑版和首播版差在哪里？</summary>
+        <div class="ans">差在第 6 集结尾，导演剪辑版多出 6 分 42 秒，包含朱朝阳与张东升在船上的对话延伸。首播版在第 34 分 12 秒处直接切到下一场。新增片段在 2026 年 10 月 30 日上线的会员版中出现，非会员版仍为首播剪辑。</div>
+      </details>
+      <details>
+        <summary>《八佰》院线版和网络版片长为什么差 5 分钟？</summary>
+        <div class="ans">院线版 147 分钟含片头龙标与发行方贴片，网络版 142 分钟删去这些内容，并把片尾职员表滚动速度调快。正片内容一致，差异在片头片尾包装，不属于删减。</div>
+      </details>
+      <details>
+        <summary>2020 年撤档的片子，条目里的日期以哪个为准？</summary>
+        <div class="ans">以首次公映日为准，撤档日期写进附注。例如《唐人街探案3》首映日记为 2021 年 2 月 12 日，附注保留 2020 年 1 月 23 日撤档通知。《紧急救援》首映日记为 2020 年 12 月 18 日，没有回到春节档。</div>
+      </details>
+      <details>
+        <summary>AI 修复版和原始底片扫描版，观影时怎么选？</summary>
+        <div class="ans">手机、平板观看可选 AI 修复版，暗部更干净；投影或大屏观看优先原始底片扫描版，胶片颗粒与夜戏层次保留更好。以《一秒钟》沙丘夜景为例，AI 修复版噪点被抹平，底片扫描版颗粒清晰。</div>
+      </details>
+      <details>
+        <summary>《沉默的真相》第 1 集配乐为什么有两个版本？</summary>
+        <div class="ans">平台版与卫视版在第 1 集片头 2 分 10 秒的地铁段落用了不同配乐，平台版为弦乐铺底，卫视版为电子音效。条目并列两条音轨说明，来源为两版片源对照。</div>
+      </details>
+      <details>
+        <summary>《棒！少年》网络版少了 6 分钟，删的是什么？</summary>
+        <div class="ans">删去的是少年们在训练基地的 6 分钟日常段落，包含一次夜间集合。院线版 108 分钟，网络版 102 分钟。条目注明删减段落未在其他渠道公开。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="sec card" id="comments" aria-labelledby="cmTitle">
+      <div class="sec-hd">
+        <h2 id="cmTitle">影迷评论：版本核对留下的具体反馈</h2>
+        <span class="hint">共 9 条，摘录 6 条</span>
+      </div>
+      <ul class="comments">
+        <li>
+          <div class="cm-h"><span class="cm-name">老陈看片</span><time datetime="2026-11-07">11-07 21:14</time></div>
+          <div class="cm-body">《隐秘的角落》第 6 集新增那段，我拿 2020 年首播的截图对比了，船上的机位确实不一样，首播版是远景直接切，导演剪辑版多了一个中景。6 分 42 秒这个数字对得上。</div>
+        </li>
+        <li>
+          <div class="cm-h"><span class="cm-name">胶片颗粒</span><time datetime="2026-11-06">11-06 18:52</time></div>
+          <div class="cm-body">《一秒钟》的 AI 修复版我投到 100 寸看，沙丘夜景糊成一片，暗部全平。<b>这个版本只适合手机看</b>，别在投影上放。</div>
+        </li>
+        <li>
+          <div class="cm-h"><span class="cm-name">阿禾</span><time datetime="2026-11-06">11-06 09:30</time></div>
+          <div class="cm-body">《八佰》点映场次那两条勘误是我提交的，8 月 14 日 19:30 场确实改成了 19:40，影院当天短信通知的。条目改得挺快。</div>
+        </li>
+        <li>
+          <div class="cm-h"><span class="cm-name">夜航船</span><time datetime="2026-11-05">11-05 23:07</time></div>
+          <div class="cm-body">说《沉默的真相》卫视版配乐更好听，我不太同意，电子音效那段反而把地铁的紧张感压掉了。不过条目把两版音轨都写出来，这点还行。</div>
+        </li>
+        <li>
+          <div class="cm-h"><span class="cm-name">不熬夜了</span><time datetime="2026-11-03">11-03 14:26</time></div>
+          <div class="cm-body">查《紧急救援》的日期，好几个转载页面写“2021 年春节上映”，明显错的。这里写 2020 年 12 月 18 日，附了撤档通知日期，能核对。</div>
+        </li>
+        <li>
+          <div class="cm-h"><span class="cm-name">秋刀鱼</span><time datetime="2026-11-02">11-02 20:41</time></div>
+          <div class="cm-body">《棋魂》真人版片头时长我倒没注意，海外版 1 分 02 秒这个数据有截图吗？<b>希望补一张对比图</b>，光写差异不太够。</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="sec card" id="news" aria-labelledby="nwTitle">
+      <div class="sec-hd">
+        <h2 id="nwTitle">相关资讯：影院复业、线上首播与片单调整</h2>
+      </div>
+      <div class="grid-2">
+        <article>
+          <h3 style="font-size:.98rem">影院复业首周排片以旧片重映为主</h3>
+          <p style="font-size:var(--fs-sm);color:var(--ink-2)">2020 年 7 月 20 日复业首日，全国排片里重映片占 63%，新片仅《第一次的离别》等少数几部。条目里把重映片与首映片分开标记，避免把 2019 年的老片误记成 2020 年新片。</p>
+        </article>
+        <article>
+          <h3 style="font-size:.98rem">《大赢家》改线上免费首播</h3>
+          <p style="font-size:var(--fs-sm);color:var(--ink-2)">原定 2020 年 2 月 21 日院线上映，3 月 20 日改为字节跳动平台免费首播，成为当年第一部直接跳过院线的主要影片。条目注明该版无院线贴片，片尾字幕提前 40 秒出现。</p>
+        </article>
+        <article>
+          <h3 style="font-size:.98rem">国庆档票房集中在两部片上</h3>
+          <p style="font-size:var(--fs-sm);color:var(--ink-2)">2020 年国庆档《我和我的家乡》《姜子牙》两部片合计占档期票房约七成，其余影片排片被压缩。条目记录各片 10 月 1 日至 8 日的排片占比变化，方便判断上映热度。</p>
+        </article>
+        <article>
+          <h3 style="font-size:.98rem">短剧规格在 2020 年集中出现</h3>
+          <p style="font-size:var(--fs-sm);color:var(--ink-2)">12 集、16 集的剧集在 2020 年暑期集中上线，单集时长 38 到 58 分钟不等。条目以总时长作为比对字段，不把集数当成统一量级，避免把不同体量的剧并列。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="sec card" id="related" aria-labelledby="rlTitle">
+      <div class="sec-hd">
+        <h2 id="rlTitle">相关推荐：值得一起核对的片目与标签</h2>
+      </div>
+      <ul class="tag-list">
+        <li><a href="/#picks">隐秘的角落 导演剪辑版 6 分 42 秒</a></li>
+        <li><a href="/#updates">八佰 点映场次表勘误</a></li>
+        <li><a href="/#picks">沉默的真相 双版本音轨</a></li>
+        <li><a href="/#updates">一秒钟 AI 修复 vs 底片扫描</a></li>
+        <li><a href="/#picks">送你一朵小红花 跨年场海报</a></li>
+        <li><a href="/#news">唐人街探案3 撤档 386 天</a></li>
+        <li><a href="/#updates">棒！少年 6 分钟删减段落</a></li>
+        <li><a href="/#guide">2020 短剧总时长对照</a></li>
+        <li><a href="/#comments">风平浪静 演职员表补全</a></li>
+        <li><a href="/#rank">2020 国庆档排片变化</a></li>
+      </ul>
+    </section>
+
+    <!-- 11 编辑榜单 -->
+    <section class="sec card" id="rank" aria-labelledby="rkTitle">
+      <div class="sec-hd">
+        <h2 id="rkTitle">编辑榜单：按“版本信息完整度”排的五条</h2>
+        <span class="hint">评分维度：日期、片长、版本、画质来源、署名五项齐全度</span>
+      </div>
+      <ol class="rank-list">
+        <li>
+          <div><div class="rk-t">隐秘的角落 导演剪辑版</div><div class="rk-d">五项齐全，另附 6 分 42 秒片段逐段说明与两版截图时间。11 月 7 日更新。</div></div>
+        </li>
+        <li>
+          <div><div class="rk-t">八佰 院线公映版</div><div class="rk-d">点映场次表经两轮勘误，附上海、杭州 8 家影院排片截图，改签记录单列。</div></div>
+        </li>
+        <li>
+          <div><div class="rk-t">大赢家 线上首播版</div><div class="rk-d">改档信息完整，片尾字幕提前 40 秒的差异有具体时点，注明无院线贴片。</div></div>
+        </li>
+        <li>
+          <div><div class="rk-t">一秒钟 流媒体 4K 修复版</div><div class="rk-d">画质来源分为 AI 修复与底片扫描两栏，夜景颗粒差异有帧截图，署名完整。</div></div>
+        </li>
+        <li>
+          <div><div class="rk-t">棒！少年 院线版 / 网络版</div><div class="rk-d">两版片长并列，删减段落位置明确。缺片尾字幕截图，署名一项待补。</div></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 12 创作者证言 -->
+    <section class="sec card" id="voices" aria-labelledby="vcTitle">
+      <div class="sec-hd">
+        <h2 id="vcTitle">创作者证言：片方与平台公开说法摘录</h2>
+      </div>
+      <div class="grid-2">
+        <div class="quote-card">
+          <blockquote>导演剪辑版增加的段落，是首播时为控制单集时长拿掉的，不是补拍。前后机位一致，看船上的栏杆位置就能对上。</blockquote>
+          <cite>—— 剧集后期制作人员，2026 年 10 月 31 日平台访谈转述</cite>
+        </div>
+        <div class="quote-card">
+          <blockquote>复业初期排片以重映片为主，新片供给不足是客观情况。首日 63% 的重映占比是行业数据，不代表观众只看老片。</blockquote>
+          <cite>—— 院线排片经理，2020 年 7 月 21 日媒体采访原文措辞</cite>
+        </div>
+      </div>
+      <p class="note" style="margin-top:.9rem">说明：引语按公开访谈原文摘录，转述部分已标注来源与日期。未获授权的内部资料不收录。</p>
+    </section>
+
+    <!-- 13 补充：可信度分层 -->
+    <section class="sec card" id="sources" aria-labelledby="scTitle">
+      <div class="sec-hd">
+        <h2 id="scTitle">可信度分层：条目信息按三级标注</h2>
+      </div>
+      <div class="grid-3">
+        <div>
+          <h3 style="font-size:.92rem;margin-bottom:.3rem">一级 · 可复核</h3>
+          <p style="font-size:var(--fs-sm);color:var(--ink-2)">片方通稿、影院排片截图、平台页面截图。附截图时间，可回溯。日期与片长优先采信这一级。</p>
+        </div>
+        <div>
+          <h3 style="font-size:.92rem;margin-bottom:.3rem">二级 · 待交叉</h3>
+          <p style="font-size:var(--fs-sm);color:var(--ink-2)">媒体报道、影迷逐帧比对。需两个以上来源一致才写入主字段，否则放附注。</p>
+        </div>
+        <div>
+          <h3 style="font-size:.92rem;margin-bottom:.3rem">三级 · 仅存档</h3>
+          <p style="font-size:var(--fs-sm);color:var(--ink-2)">论坛转述、未署名截图。只记录不采信，标注“转述”，不与一级信息混排。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <aside aria-label="侧栏导航与条目速览">
+    <nav class="side-card card side-nav" aria-label="页内栏目导航">
+      <h2>页内导航</h2>
+      <ul>
+        <li><a href="/#overview" data-nav>领域概览</a></li>
+        <li><a href="/#picks" data-nav>精选片单</a></li>
+        <li><a href="/#updates" data-nav>最新更新</a></li>
+        <li><a href="/#catalog" data-nav>分类入口</a></li>
+        <li><a href="/#deep" data-nav>深度解析</a></li>
+        <li><a href="/#guide" data-nav>体验指南</a></li>
+        <li><a href="/#faq" data-nav>常见问题</a></li>
+        <li><a href="/#comments" data-nav>影迷评论</a></li>
+        <li><a href="/#news" data-nav>相关资讯</a></li>
+        <li><a href="/#related" data-nav>相关推荐</a></li>
+        <li><a href="/#rank" data-nav>编辑榜单</a></li>
+        <li><a href="/#sources" data-nav>可信度分层</a></li>
+      </ul>
+    </nav>
+    <div class="side-card card">
+      <h2>条目速览</h2>
+      <dl class="kv">
+        <dt>在册条目</dt><dd>1,286</dd>
+        <dt>版本对照</dt><dd>74 条</dd>
+        <dt>修复说明</dt><dd>319 条</dd>
+        <dt>本周校订</dt><dd>6 条</dd>
+        <dt>最近校对</dt><dd>2026-11-07</dd>
+      </dl>
+    </div>
+    <div class="side-card card">
+      <h2>高频检索词</h2>
+      <ul class="mini" style="list-style:none;padding:0">
+        <li><a href="/#picks">隐秘的角落 导演剪辑版</a></li>
+        <li><a href="/#updates">八佰 点映场次</a></li>
+        <li><a href="/#updates">一秒钟 AI 修复</a></li>
+        <li><a href="/#news">唐人街探案3 撤档</a></li>
+        <li><a href="/#comments">风平浪静 演职员表</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer class="site">
+  <div class="wrap ft-inner">
+    <div>
+      <div class="ft-brand">
+        <svg viewBox="0 0 64 64" role="img" aria-label="影先锋资源站2020 页脚标志">
+          <rect width="64" height="64" rx="14" fill="#17233a"/>
+          <path d="M18 20h28v6H24v4h20v6H24v4h22v6H18z" fill="#e8b84b"/>
+          <circle cx="46" cy="44" r="6" fill="#c9d6e4"/>
+          <circle cx="46" cy="44" r="2.2" fill="#17233a"/>
+        </svg>
+        <strong>影先锋资源站2020</strong>
+      </div>
+      <p>把 2020 年前后上映与上线的华语片目按版本拆开记录，日期、片长、画质来源逐条核对。</p>
+      <p class="note" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);color:#a9b4c6">页面数据为归档示例，片名与日期按公开资料整理；示例条目保留勘误入口。</p>
+    </div>
+    <div>
+      <h3>内容频道</h3>
+      <ul>
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picks">精选片单</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#catalog">分类入口</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>核对工具</h3>
+      <ul>
+        <li><a href="/#guide">版本比对步骤</a></li>
+        <li><a href="/#sources">可信度分层</a></li>
+        <li><a href="/#rank">编辑榜单</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">勘误反馈</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>索引入口</h3>
+      <ul>
+        <li><a href="/#catalog">按题材查片</a></li>
+        <li><a href="/#catalog">按平台查片</a></li>
+        <li><a href="/#catalog">按年份查片</a></li>
+        <li><a href="/#related">相关推荐标签</a></li>
+        <li><a href="/#voices">创作者证言</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap ft-base">
+    <span>© 2026 影先锋资源站2020 · 片目归档示例</span>
+    <span class="dotsep">|</span>
+    <span>更新时间：2026-11-07（对应《隐秘的角落》片段补录与《八佰》场次勘误）</span>
+    <span class="dotsep">|</span>
+    <span>联系方式以站内评论区勘误入口为准</span>
+  </div>
+</footer>
+
+<button class="backtop" id="backTop" aria-label="回到页面顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  function closeMenu(){
+    mainNav.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded','false');
+  }
+  menuBtn.addEventListener('click', function(){
+    var open = mainNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mainNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ closeMenu(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeMenu(); }
+  });
+
+  /* 站内查找（本地） */
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var feedback = document.getElementById('searchFeedback');
+  var searchable = [];
+  document.querySelectorAll('main h2, main h3, .pick .pk-t, .compact-list .cl-t, .chips a, .tag-list a, .rank-list .rk-t, .side-card .mini a').forEach(function(el){
+    var txt = el.textContent.replace(/\s+/g,' ').trim();
+    if(txt){ searchable.push({el:el, text:txt}); }
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = input.value.trim();
+    if(!q){
+      feedback.textContent = '输入片名、导演或年份再查找。';
+      feedback.dataset.state = '';
+      return;
+    }
+    var hit = null;
+    var lower = q.toLowerCase();
+    for(var i=0;i<searchable.length;i++){
+      if(searchable[i].text.toLowerCase().indexOf(lower) !== -1){ hit = searchable[i]; break; }
+    }
+    if(hit){
+      feedback.dataset.state = 'ok';
+      feedback.textContent = '已找到条目：' + hit.text;
+      var target = hit.el.closest('section, article, div');
+      if(target && target.id){
+        location.hash = '#' + target.id;
+      }else if(hit.el.id){
+        hit.el.scrollIntoView({behavior:'smooth'});
+      }else{
+        hit.el.setAttribute('tabindex','-1');
+        hit.el.focus({preventScroll:true});
+        hit.el.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }else{
+      feedback.dataset.state = '';
+      feedback.textContent = '没有找到“' + q + '”相关条目，试试片名关键字、平台名或上映年份。';
+    }
+  });
+
+  /* 回到顶部 */
+  var backTop = document.getElementById('backTop');
+  var ticking = false;
+  function onScroll(){
+    if(ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      if(window.scrollY > 520){ backTop.classList.add('show'); }
+      else{ backTop.classList.remove('show'); }
+      ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  backTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 侧栏导航滚动高亮 */
+  if('IntersectionObserver' in window){
+    var links = Array.prototype.slice.call(document.querySelectorAll('[data-nav]'));
+    var map = {};
+    links.forEach(function(a){
+      var id = a.getAttribute('href').split('#')[1];
+      if(id){ map[id] = a; }
+    });
+    var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(a){ a.classList.remove('current'); });
+          var a = map[en.target.id];
+          if(a){ a.classList.add('current'); }
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px', threshold:0});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"影先锋资源站2020",
+  "alternateName":"2020年华语影视片目归档",
+  "description":"按年份归档的华语剧集与院线电影片目索引，记录上映日期、片长、版本差异与修复画质来源。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"《隐秘的角落》导演剪辑版和首播版差在哪里？","acceptedAnswer":{"@type":"Answer","text":"差在第6集结尾，导演剪辑版多出6分42秒，包含朱朝阳与张东升在船上的对话延伸。首播版在第34分12秒处直接切到下一场。新增片段在2026年10月30日上线的会员版中出现，非会员版仍为首播剪辑。"}},
+    {"@type":"Question","name":"《八佰》院线版和网络版片长为什么差5分钟？","acceptedAnswer":{"@type":"Answer","text":"院线版147分钟含片头龙标与发行方贴片，网络版142分钟删去这些内容，并把片尾职员表滚动速度调快。正片内容一致，差异在片头片尾包装，不属于删减。"}},
+    {"@type":"Question","name":"2020年撤档的片子，条目里的日期以哪个为准？","acceptedAnswer":{"@type":"Answer","text":"以首次公映日为准，撤档日期写进附注。例如《唐人街探案3》首映日记为2021年2月12日，附注保留2020年1月23日撤档通知。《紧急救援》首映日记为2020年12月18日，没有回到春节档。"}},
+    {"@type":"Question","name":"AI修复版和原始底片扫描版，观影时怎么选？","acceptedAnswer":{"@type":"Answer","text":"手机、平板观看可选AI修复版，暗部更干净；投影或大屏观看优先原始底片扫描版，胶片颗粒与夜戏层次保留更好。以《一秒钟》沙丘夜景为例，AI修复版噪点被抹平，底片扫描版颗粒清晰。"}},
+    {"@type":"Question","name":"《沉默的真相》第1集配乐为什么有两个版本？","acceptedAnswer":{"@type":"Answer","text":"平台版与卫视版在第1集片头2分10秒的地铁段落用了不同配乐，平台版为弦乐铺底，卫视版为电子音效。条目并列两条音轨说明，来源为两版片源对照。"}},
+    {"@type":"Question","name":"《棒！少年》网络版少了6分钟，删的是什么？","acceptedAnswer":{"@type":"Answer","text":"删去的是少年们在训练基地的6分钟日常段落，包含一次夜间集合。院线版108分钟，网络版102分钟。条目注明删减段落未在其他渠道公开。"}}
+  ]
+}
+</script>
+</body>
+  </html>
